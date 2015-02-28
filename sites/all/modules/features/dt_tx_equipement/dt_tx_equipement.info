@@ -1,0 +1,12 @@
+name = dt_tx_equipement
+description = Equipement taxonomy
+core = 7.x
+package = Dalibert
+version = 7.x-1.0
+project = dt_tx_equipement
+features[features_api][] = api:2
+features[taxonomy][] = equipement
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][taxonomy] = taxonomy
+no autodetect = 1
+project path = sites/all/modules/features
