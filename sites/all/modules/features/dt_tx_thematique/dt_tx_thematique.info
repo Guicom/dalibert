@@ -1,0 +1,12 @@
+name = dt_tx_thematique
+description = Thematique taxonomy
+core = 7.x
+package = Dalibert
+version = 7.x-1.0
+project = dt_tx_thematique
+features[features_api][] = api:2
+features[taxonomy][] = th_matique
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][taxonomy] = taxonomy
+no autodetect = 1
+project path = sites/all/modules/features
