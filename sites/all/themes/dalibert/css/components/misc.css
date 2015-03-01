@@ -82,7 +82,7 @@
 
 /* Wrapping link for logo. */
 .header__logo {
-  float: left; /* LTR */
+  float: left;
   margin: 0;
   padding: 0;
 }
@@ -122,7 +122,7 @@
 
 /* The secondary menu (login, etc.) */
 .header__secondary-menu {
-  float: right; /* LTR */
+  float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
@@ -147,13 +147,13 @@
 #navigation .menu {
   margin: 0;
   padding: 0;
-  text-align: left; /* LTR */
+  text-align: left;
 }
 #navigation .links li,
 #navigation .menu li {
   /* A simple method to get navigation links to appear in one line. */
-  float: left; /* LTR */
-  padding: 0 10px 0 0; /* LTR */
+  float: left;
+  padding: 0 10px 0 0;
   list-style-type: none;
   list-style-image: none;
 }
@@ -192,10 +192,10 @@
 .messages--warning,
 .messages--error {
   margin: 1.5em 0;
-  padding: 10px 10px 10px 50px; /* LTR */
+  padding: 10px 10px 10px 50px;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD6UlEQVR42s2WX0xbVRzH3YwmC4k+GF/0ZS/S267/bmnX9nL7bwstZlnbjTDYyoC5GCbB0ZW5pdJCe6swbLFA6bpWIGuRMWVjKGP+21QW3SZBSAjGh4XEaTZTH82Cm/3ztS2xs7mw4KLRk3xyzj33/H6fe5Pz7zEA/yr/vUDukj9FH6drqTaqT8EoPs/UV+nX6TD1BlUh9AqLHlmgPKLcRHmoCOWmElK/FOKTYpS8UwLJkASiUyLI3pKhlClN0g46qj+qL/pbArlbrlO1q25JeiSgR2iYJ8ywXLSg/qP6LNl2ro8+Q4MMkKCd9K2t3q3KdQnkXXIF5aISkgEJzONm1F2qW52pDJN1MI2bUBIuAdVOJWSMTPNQgX6/vkjVpvpREpag6oMqWCYta1IzbsHh9ga0RJtzY8URMdRO9U/KSuWmNQUqh2pY3CtG+fvlqJyofMAFNrZAE+7e/RWR4X4cD9tgOGsA2U2CdtMDqwqyMyIzQ5KKqAKmcyaYxkzYd3YvjGNGFtXRPRj58DT+LOemRrFnrBLyITmUDmUyO/NYgu2d26ukHVJo3tXAMGpAs+cQmh0NeClan30uwN7TgnQ6nRd4r3thOGOAJqYB2UVC79AfZAnKHGUxQa8A2tNaNLW/jKvXv8Dyb8s4yryKA4O10A3roIvpUB+swTdz1/LJZ27PQBvT5lBH1RD4BChzlQ2wBNtc22aE/ULQgzRCl4P5BPcT93GMOYz9wb2QhCRgAq35d8u/L2PXe7tADVGgBlcQ+AXQtmlvsP/gzbJZvp8PMkJCFBYh8m0knyiVSsHe0YIGZz1+/uVOvt8z7QGvnwf+ST5EIRHIUyR4fh50rbp5lsDcYR4ReAXgBrng9q/Qfa0bfy035r7Ot2dvz4IX4IEIEAXwvDzscOw4zxJUd1YfEXlE4Aa4BQHMlwzSSBeI7iXvoTxWDqKPYCFsFaKmr+YVliB0JfS89DVpiuhlB9k/tSOZTuYFvq98yI7L0/MAsVWcGp0bfW61hbahwltxSeARsIKyWKesSKQSWIwvYkvvllwfx88pgOvhwthu/AzAxlVX8vz385tLbaVxwpcLZtEw0QDjsBGctzksiE4CimZFfHp++oWHbnbuUfdB0komMgHsRN1r0MWBsEmYODF5onY92/UTwcvBxuzXcN1ccHycVSn2FaPYWwzCQUDWKIt7z3utAJ5c74Hz+OLSomynY+cVfiM/xW3JiDyZpB3FuZrj4oCwE+Ad4qWMjPHjpTtL0mzMoxyZz9yM39Q7Y85Ok930icqm+k59TL2wm9l90dZv8y/8sPAigGf/iUN/Q4anM2zOsdLe+L+4VfwBVVjDs2rTYx0AAAAASUVORK5CYII=');
   *background-image: url('../../images/message-24-ok.png');
-  background-position: 8px 8px; /* LTR */
+  background-position: 8px 8px;
   background-repeat: no-repeat;
   border: 1px solid #be7;
 }
@@ -262,7 +262,7 @@
 .tabs-primary__tab,
 .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
-  float: left; /* LTR */
+  float: left;
   margin: 0 3px;
 }
 a.tabs-primary__tab-link,
@@ -381,29 +381,29 @@ a.tabs-secondary__tab-link.is-active {
 .inline li {
   display: inline;
   list-style-type: none;
-  padding: 0 1em 0 0; /* LTR */
+  padding: 0 1em 0 0;
 }
 
 /* The inline field label used by the Fences module. */
 span.field-label {
-  padding: 0 1em 0 0; /* LTR */
+  padding: 0 1em 0 0;
 }
 
 /**
  * "More" links.
  */
 .more-link {
-  text-align: right; /* LTR */
+  text-align: right;
 }
 .more-help-link {
-  text-align: right; /* LTR */
+  text-align: right;
 }
 .more-help-link a {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
   *background-image: url('../../images/help.png');
-  background-position: 0 50%; /* LTR */
+  background-position: 0 50%;
   background-repeat: no-repeat;
-  padding: 1px 0 1px 20px; /* LTR */
+  padding: 1px 0 1px 20px;
 }
 
 /**
@@ -456,8 +456,8 @@ span.field-label {
   list-style-type: circle;
 }
 .menu__item.is-collapsed {
-  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC'); /* LTR */
-  *list-style-image: url('../../images/menu-collapsed.png'); /* LTR */
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
+  *list-style-image: url('../../images/menu-collapsed.png');
   list-style-type: disc;
 }
 
@@ -531,7 +531,7 @@ span.field-label {
 /* Nested comments are indented. */
 .indented {
   /* Drupal core uses a 25px left margin. */
-  margin-left: 30px; /* LTR */
+  margin-left: 30px;
 }
 
 /**
@@ -598,7 +598,7 @@ a.button {
 
 /* Drupal's default login form block. */
 #user-login-form {
-  text-align: left; /* LTR */
+  text-align: left;
 }
 
 /**
@@ -622,7 +622,7 @@ a.button {
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
-  margin-left: -20px; /* LTR */
+  margin-left: -20px;
 }
 #user-login ul {
   margin: 1.5em 0;
@@ -632,8 +632,8 @@ html.js #user-login-form li.openid-link,
  * Drupal admin tables.
  */
 form th {
-  text-align: left; /* LTR */
-  padding-right: 1em; /* LTR */
+  text-align: left;
+  padding-right: 1em;
   border-bottom: 3px solid #ccc;
 }
 form tbody {
@@ -695,14 +695,14 @@ td.menu-disabled {
 html.js .collapsible .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   *background-image: url('../../images/menu-expanded.png');
-  background-position: 5px 65%; /* LTR */
+  background-position: 5px 65%;
   background-repeat: no-repeat;
-  padding-left: 15px; /* LTR */
+  padding-left: 15px;
 }
 html.js .collapsed .fieldset-legend {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC'); /* LTR */
-  *background-image: url('../../images/menu-collapsed.png'); /* LTR */
-  background-position: 5px 50%; /* LTR */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
+  *background-image: url('../../images/menu-collapsed.png');
+  background-position: 5px 50%;
 }
 .fieldset-legend .summary {
   color: #999;
