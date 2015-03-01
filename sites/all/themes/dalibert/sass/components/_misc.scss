@@ -79,7 +79,7 @@
 
 /* Wrapping link for logo. */
 .header__logo {
-  float: left; /* LTR */
+  float: left;
   margin: 0;
   padding: 0;
 }
@@ -121,7 +121,7 @@
 
 /* The secondary menu (login, etc.) */
 .header__secondary-menu {
-  float: right; /* LTR */
+  float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
@@ -151,12 +151,12 @@
   .menu {
     margin: 0;
     padding: 0;
-    text-align: left; /* LTR */
+    text-align: left;
 
     li {
       /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
-      padding: 0 10px 0 0; /* LTR */
+      float: left;
+      padding: 0 10px 0 0;
       list-style-type: none;
       list-style-image: none;
     }
@@ -196,12 +196,12 @@
  */
 .messages {
   margin: rhythm(1) 0;
-  padding: 10px 10px 10px 50px; /* LTR */
+  padding: 10px 10px 10px 50px;
   background-image: inline-image("message-24-ok.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *background-image: image-url("message-24-ok.png");
   }
-  background-position: 8px 8px; /* LTR */
+  background-position: 8px 8px;
   background-repeat: no-repeat;
   border: 1px solid #be7;
 }
@@ -273,7 +273,7 @@
   white-space: nowrap;
 }
 %tabs__tab {
-  float: left; /* LTR */
+  float: left;
   margin: 0 3px;
 }
 %tabs__tab-link {
@@ -404,32 +404,32 @@ a.tabs-secondary__tab-link.is-active {
   li {
     display: inline;
     list-style-type: none;
-    padding: 0 1em 0 0; /* LTR */
+    padding: 0 1em 0 0;
   }
 }
 
 /* The inline field label used by the Fences module. */
 span.field-label {
-  padding: 0 1em 0 0; /* LTR */
+  padding: 0 1em 0 0;
 }
 
 /**
  * "More" links.
  */
 .more-link {
-  text-align: right; /* LTR */
+  text-align: right;
 }
 .more-help-link {
-  text-align: right; /* LTR */
+  text-align: right;
 }
 .more-help-link a {
   background-image: inline-image("help.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *background-image: image-url("help.png");
   }
-  background-position: 0 50%; /* LTR */
+  background-position: 0 50%;
   background-repeat: no-repeat;
-  padding: 1px 0 1px 20px; /* LTR */
+  padding: 1px 0 1px 20px;
 }
 
 /**
@@ -491,9 +491,9 @@ span.field-label {
   list-style-type: circle;
 }
 .menu__item.is-collapsed {
-  list-style-image: inline-image("menu-collapsed.png"); /* LTR */
+  list-style-image: inline-image("menu-collapsed.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: image-url("menu-collapsed.png"); /* LTR */
+    *list-style-image: image-url("menu-collapsed.png");
   }
   list-style-type: disc;
 }
@@ -571,7 +571,7 @@ span.field-label {
 /* Nested comments are indented. */
 .indented {
   /* Drupal core uses a 25px left margin. */
-  margin-left: $indent-amount; /* LTR */
+  margin-left: $indent-amount;
 }
 
 /**
@@ -639,7 +639,7 @@ a.button {
 
 /* Drupal's default login form block. */
 #user-login-form {
-  text-align: left; /* LTR */
+  text-align: left;
 }
 
 /**
@@ -663,7 +663,7 @@ a.button {
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
-  margin-left: -20px; /* LTR */
+  margin-left: -20px;
 }
 #user-login ul {
   margin: rhythm(1) 0;
@@ -674,8 +674,8 @@ html.js #user-login-form li.openid-link,
  */
 form {
   th {
-    text-align: left; /* LTR */
-    padding-right: 1em; /* LTR */
+    text-align: left;
+    padding-right: 1em;
     border-bottom: 3px solid #ccc;
   }
   tbody {
@@ -744,16 +744,16 @@ td.menu-disabled {
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
       *background-image: image-url("menu-expanded.png");
     }
-    background-position: 5px 65%; /* LTR */
+    background-position: 5px 65%;
     background-repeat: no-repeat;
-    padding-left: 15px; /* LTR */
+    padding-left: 15px;
   }
   html.js .collapsed & {
-    background-image: inline-image("menu-collapsed.png"); /* LTR */
+    background-image: inline-image("menu-collapsed.png");
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-      *background-image: image-url("menu-collapsed.png"); /* LTR */
+      *background-image: image-url("menu-collapsed.png");
     }
-    background-position: 5px 50%; /* LTR */
+    background-position: 5px 50%;
   }
   .summary {
     color: #999;

@@ -314,14 +314,14 @@ ul {
   }
 }
 dd {
-  margin: 0 0 0 $indent-amount; /* LTR */
+  margin: 0 0 0 $indent-amount;
 }
 
 /* Address paddings set differently in IE 6/7. */
 menu,
 ol,
 ul {
-  padding: 0 0 0 $indent-amount; /* LTR */
+  padding: 0 0 0 $indent-amount;
 }
 
 @if $legacy-support-for-ie7 {
@@ -399,7 +399,7 @@ legend {
   border: 0; /* 1 */
   padding: 0; /* 2 */
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *margin-left: -7px; /* 3 */ /* LTR */
+    *margin-left: -7px; /* 3 */
   }
 }
 
