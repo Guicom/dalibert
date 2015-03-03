@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the dt_vw_actualites feature.
+ */
+
+include_once 'dt_vw_actualites.features.inc';

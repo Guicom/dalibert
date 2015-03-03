@@ -3,7 +3,9 @@
 #navigation {
   position: fixed;
   height: 100%;
-  background: $colortest1;
+  background: url('../images/menu.png') no-repeat center center;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
 }
 
 .region-sidebar-second {
