@@ -1,0 +1,55 @@
+/* Colors*/
+$colortest1: #444242;
+$colortest2: #41803a;
+
+$black-transparent : rgba(0, 0, 0, 0.5);
+
+$white: #fff;
+
+$red : rgba(242, 38, 19 , 0.5);
+
+
+
+/* Font */
+$main-font : 'open sans';
+
+@mixin font-light {
+  font-family: $main-font;
+  font-weight: 300;
+}
+
+@mixin font-normal {
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+@mixin font-bold {
+  font-family: $main-font;
+  font-weight: 600;
+}
+
+$font-base-size :16px;
+
+@function em($px, $base: $font-base-size) {
+  @return ($px / $base) * 1em;
+}
+
+@mixin h1-thin {
+  @include font-light;
+  font-size: em(25px);
+}
+
+@mixin h1-normal {
+  @include font-normal;
+  font-size: em(25px);
+}
+
+@mixin h2-thin {
+  @include font-light;
+  font-size: em(20px);
+}
+
+@mixin h2-normal {
+  @include font-normal;
+  font-size: em(20px);
+}

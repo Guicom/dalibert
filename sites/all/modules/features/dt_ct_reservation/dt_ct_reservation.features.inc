@@ -33,7 +33,8 @@ function dt_ct_reservation_default_entityform_type() {
       "roles" : { "1" : "1", "2" : 0, "3" : 0 },
       "resubmit_action" : "new",
       "redirect_path" : "",
-      "instruction_pre" : { "value" : "", "format" : "filtered_html" }
+      "instruction_pre" : { "value" : "", "format" : "filtered_html" },
+      "enable_block" : 1
     },
     "weight" : "0",
     "rdf_mapping" : [],

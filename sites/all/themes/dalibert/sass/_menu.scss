@@ -1,0 +1,23 @@
+@import "base";
+
+#main-menu {
+  padding: 30px 0 0 0;
+  ul.links {
+    padding-left: 15%;
+    li {
+      float: none;
+      border-bottom: solid 1px $white;
+      padding: 5px 0;
+      &:last-of-type {
+        border: none;
+      }
+      a {
+        color: $white;
+        text-transform: uppercase;
+        &.active {
+          @include font-normal;
+        }
+      }
+    }
+  }
+}
