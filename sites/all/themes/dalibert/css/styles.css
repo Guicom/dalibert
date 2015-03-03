@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -1632,7 +1633,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1398863088');
+  background-image: url('../images/progress.gif?1425142686');
 }
 
 /**
@@ -1730,10 +1731,14 @@ tr.selected td {
 #navigation {
   position: fixed;
   height: 100%;
-  background: #444242;
+  background: url("../images/menu.png") no-repeat center center;
+  -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardis├®e */
 }
 
-/* line 9, ../sass/_region.scss */
+/* line 11, ../sass/_region.scss */
 .region-sidebar-second {
   position: fixed;
   height: 100%;
@@ -1741,7 +1746,7 @@ tr.selected td {
   background: #444242;
 }
 
-/* line 16, ../sass/_region.scss */
+/* line 18, ../sass/_region.scss */
 #footer {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -1782,6 +1787,12 @@ h3 {
   font-size: 1em;
 }
 
+/* line 27, ../sass/_global.scss */
+input {
+  background: #F2F2F2;
+  border: none;
+}
+
 /* Colors*/
 /* Font */
 /* line 3, ../sass/_menu.scss */
@@ -1795,7 +1806,7 @@ h3 {
 /* line 7, ../sass/_menu.scss */
 #main-menu ul.links li {
   float: none;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #4a4949;
   padding: 5px 0;
 }
 /* line 11, ../sass/_menu.scss */
@@ -1897,32 +1908,42 @@ h3 {
 /* line 65, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
-/* line 67, ../sass/_reservation.scss */
+/* line 69, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .start-date-wrapper {
   clear: none;
   float: left;
   width: auto;
 }
-/* line 72, ../sass/_reservation.scss */
+/* line 73, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .start-date-wrapper .date-padding {
+  padding: 0;
+}
+/* line 77, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .end-date-wrapper {
   clear: none;
   float: left;
   width: auto;
   margin-left: 10px;
 }
-/* line 77, ../sass/_reservation.scss */
+/* line 82, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .end-date-wrapper .date-padding {
+  padding: 0;
+}
+/* line 85, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .end-date-wrapper div.form-type-date-popup > label {
   float: left;
   line-height: 90px;
   margin-right: 15px;
 }
-/* line 89, ../sass/_reservation.scss */
+/* line 97, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre #edit-field-resa-chambre-und-add-more {
   background: rgba(242, 38, 19, 0.5);
   border: none;
 }
-/* line 95, ../sass/_reservation.scss */
+/* line 103, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-adresse legend {
   font-family: "open sans";
   font-weight: 300;
