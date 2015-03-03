@@ -32,9 +32,7 @@ $zen-auto-include-item-base: false;
  */
 #page,
 .region-bottom {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
+  width: 100%;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -156,7 +154,7 @@ $zen-auto-include-item-base: false;
  */
 @media all and (min-width: 960px) {
 
-  $zen-column-count: 5;
+  $zen-column-count: 5 !global;
 
   /**
    * The layout when there is only one sidebar, the left one.
