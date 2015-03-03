@@ -1,0 +1,101 @@
+@import "base";
+
+
+.page-eform-submit-reservation {
+  #content {
+    width:40%;
+    overflow:hidden;
+    height:100%;
+    background: $black-transparent;
+    #reservation-entityform-edit-form {
+      width: 200%;
+      padding-left: 20%;
+      padding-top: 30px;
+      background:$red;
+      transform: rotate(-10deg);
+      margin-left:-16%;
+      height:auto;
+      position:relative;
+      display:block;
+      > div {
+        transform: rotate(10deg);
+        width: 46%;
+      }
+      #edit-field-resa-nom {
+        float: left;
+      }
+      #edit-field-resa-prenom {
+        float: left;
+        margin-left: 10px;
+      }
+      #edit-field-resa-chambre {
+        clear: both;
+        table {
+          width: 100%;
+          border-top: solid 1px $black-transparent;
+          thead {
+            tr {
+              th {
+                border: none;
+                label {
+                  @include h1-thin
+                }
+              }
+            }
+          }
+          tbody {
+            border: none;
+            width: auto;
+            tr {
+              background: none;
+              border: none;
+              td {
+                &.field-multiple-drag {
+                display: none;
+                }
+                .field-name-field-resa-fc-chambre {
+                  float: left;
+                }
+                .field-name-field-resa-fc-nbre-pers {
+                  float: left;
+                  margin-left: 10px;
+                }
+                .field-name-field-resa-fc-date {
+                  clear: both;
+                  fieldset {
+                    border: none;
+                    .start-date-wrapper {
+                      clear: none;
+                      float: left;
+                      width: auto;
+                    }
+                    .end-date-wrapper {
+                      clear: none;
+                      float: left;
+                      width: auto;
+                      margin-left: 10px;
+                      div.form-type-date-popup > label {
+                        float: left;
+                        line-height: 90px;
+                        margin-right: 15px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        #edit-field-resa-chambre-und-add-more {
+          background: $red;
+          border: none;
+        }
+      }
+      #edit-field-resa-adresse {
+        legend {
+          @include h1-thin;
+        }
+      }
+    }
+  }
+}

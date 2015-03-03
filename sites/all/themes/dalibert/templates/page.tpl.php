@@ -14,6 +14,8 @@
 
     <div id="navigation">
 
+      <?php print render($page['navigation']); ?>
+
       <?php if ($main_menu): ?>
         <nav id="main-menu" role="navigation" tabindex="-1">
           <?php
@@ -24,7 +26,7 @@
           print theme('links__system_main_menu', array(
             'links' => $main_menu,
             'attributes' => array(
-              'class' => array('links', 'inline', 'clearfix'),
+              'class' => array('links', 'clearfix'),
             ),
             'heading' => array(
               'text' => t('Main menu'),
@@ -34,8 +36,6 @@
           )); ?>
         </nav>
       <?php endif; ?>
-
-      <?php print render($page['navigation']); ?>
 
     </div>
 

@@ -1,0 +1,25 @@
+@import "base";
+
+
+p, h1, h2, h3, span, a, label {
+  @include font-light;
+  text-decoration: none;
+}
+
+#main {
+  padding: 0;
+}
+
+p, label, a, span {
+  font-size: em(14px);
+}
+
+h1 {
+  font-size: em(26px);
+}
+h2 {
+  font-size: em(20px);
+}
+h3 {
+  font-size: em(16px);
+}
