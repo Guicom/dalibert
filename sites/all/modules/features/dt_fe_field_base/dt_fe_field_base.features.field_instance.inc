@@ -122,7 +122,7 @@ function dt_fe_field_base_field_default_field_instances() {
       'active' => 1,
       'module' => 'email',
       'settings' => array(
-        'size' => 60,
+        'size' => 40,
       ),
       'type' => 'email_textfield',
       'weight' => 6,
@@ -320,7 +320,7 @@ function dt_fe_field_base_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_resa_fc_date',
-    'label' => 'Date',
+    'label' => 'Date de réservation',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -348,7 +348,11 @@ function dt_fe_field_base_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_resa_chambre-field_resa_fc_nbre_pers'
   $field_instances['field_collection_item-field_resa_chambre-field_resa_fc_nbre_pers'] = array(
     'bundle' => 'field_resa_chambre',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -611,7 +615,7 @@ function dt_fe_field_base_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Adresse');
   t('Chambre');
-  t('Date');
+  t('Date de réservation');
   t('Description');
   t('Equipement');
   t('Mail');

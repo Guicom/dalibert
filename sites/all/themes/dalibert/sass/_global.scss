@@ -1,5 +1,8 @@
 @import "base";
 
+body {
+  position: fixed;
+}
 
 p, h1, h2, h3, span, a, label {
   @include font-light;
@@ -12,19 +15,24 @@ p, h1, h2, h3, span, a, label {
 
 p, label, a, span {
   font-size: em(14px);
+  color: $white;
 }
 
 h1 {
   font-size: em(26px);
+  color: $white;
 }
 h2 {
   font-size: em(20px);
+  color: $white;
 }
 h3 {
   font-size: em(16px);
+  color: $white;
 }
 
-input {
+input, select {
+  font-size: em(14px);
   background: $lightgrey;
   border: none;
 }
