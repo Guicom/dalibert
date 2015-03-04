@@ -29,6 +29,11 @@ Drupal.behaviors.my_custom_behavior = {
     $('#reservation-entityform-edit-form > div').addClass('scroll-content')
 
 
+      // menu center verticalement
+      var heightMenu = $('.links').height();
+      var menuMargin = (heightScreen - heightMenu )/2;
+
+      $('.links').css('top', menuMargin);
 
   }
 };

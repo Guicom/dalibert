@@ -3,12 +3,17 @@
 
 #logo {
   width: 100%;
+  height: auto;
 }
 
 #main-menu {
   padding: 30px 0 0 0;
   ul.links {
     padding-left: 15%;
+    float: left;
+    width: 85%;
+    position: absolute;
+    left: 0;
     li {
       float: none;
       border-bottom: solid 1px $darkgrey;
