@@ -18,6 +18,17 @@ Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
     // Place your code here.
+    $('.i18n-fr #reservation-entityform-edit-form .field-add-more-submit').val('Ajouter une chambre');
+
+    //fix body size
+    var widthScreen = $(window).width();
+    var heightScreen = $(window).height();
+    $('body').css('width', widthScreen);
+    $('body').css('height', heightScreen);
+
+    $('#reservation-entityform-edit-form > div').addClass('scroll-content')
+
+
 
   }
 };
