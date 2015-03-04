@@ -12,11 +12,11 @@
   position: fixed;
   height: 100%;
   top: 0;
-  background: $colortest1;
+  background: $black-transparent;
+  overflow: hidden;
 }
 
 #footer {
-  background: $black-transparent;
   position: fixed;
   bottom: 0;
 }

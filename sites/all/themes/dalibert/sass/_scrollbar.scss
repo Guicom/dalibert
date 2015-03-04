@@ -1,0 +1,20 @@
+@import "base";
+
+.jspVerticalBar {
+  background: none;
+}
+.jspTrack {
+  background: $black-transparent;
+  .jspDrag {
+    background: $whitetransparent;
+  }
+}
+
+.jspArrowUp,
+.jspArrowUp.jspDisabled{
+  background: url("../images/scrollup.png") no-repeat center center;
+}
+.jspArrowDown,
+.jspArrowDown.jspDisabled {
+  background: url("../images/scrolldown.png") no-repeat center center;
+}

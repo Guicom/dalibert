@@ -2,9 +2,12 @@
 
 body {
   position: fixed;
+  background: url("../images/test.jpg") no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
 }
 
-p, h1, h2, h3, span, a, label {
+p, h1, h2, h3, span, a, label, input, select {
   @include font-light;
   text-decoration: none;
 }
@@ -35,4 +38,16 @@ input, select {
   font-size: em(14px);
   background: $lightgrey;
   border: none;
+  border: none;
+  padding-left: 6px;
+  height: 24px;
+  line-height: 20px;
+}
+
+select {
+  background: url('../images/select.png') no-repeat right center $lightgrey;
+  -webkit-appearance: none;
+  height: 24px;
+  line-height: 20px;
+  padding-left: 6px;
 }

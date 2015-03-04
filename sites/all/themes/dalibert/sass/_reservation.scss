@@ -8,6 +8,13 @@
     height:100%;
     background: $black-transparent;
     position: fixed;
+    #page-title {
+      float: right;
+      margin-top: 15%;
+      margin-right: 5%;
+      z-index: 5;
+      position: relative;
+    }
     #reservation-entityform-edit-form {
       width: 200%;
       padding-left: 20%;
@@ -18,13 +25,15 @@
       height:72%;
       position:relative;
       display:block;
+      margin-top: 9%;
       > div {
         transform: rotate(10deg);
         width: 46%;
         overflow-y: scroll;
-        height: 87%;
+        height: 83%;
         overflow-x: hidden;
-        margin-top: 1%;
+        margin-top: 3%;
+        margin-left: -1%;
       }
       #edit-field-resa-nom {
         float: left;
@@ -60,16 +69,30 @@
             width: auto;
             tr {
               background: none;
-              border: none;
+              border-top: 1px solid $darkgrey;
+              border-bottom: none;
               td {
                 padding: 10px;
                 &.field-multiple-drag {
                 display: none;
                 }
                 > input {
-                  background: $red;
+                  background: url("../images/cross.png") no-repeat left center;
+                  height: 20px;
+                  padding-left: 20px;
                   clear: none;
                   float: right;
+                  color:$white;
+                  line-height: 20px;
+                }
+                .ajax-processed {
+                  background: url("../images/cross.png") no-repeat left center;
+                  height: 20px;
+                  padding-left: 20px;
+                  clear: none;
+                  float: right;
+                  color:$white;
+                  line-height: 20px;
                 }
                 .field-name-field-resa-fc-chambre {
                   float: left;
@@ -84,9 +107,10 @@
                   padding-top: 13px;
                   label {
                     line-height: em(18px);
+                    margin-bottom: 2px;
                   }
                   select {
-                    width: 40px;
+                    width: 55px;
                   }
                 }
                 .field-name-field-resa-fc-date {
@@ -123,6 +147,10 @@
                     }
                     input {
                       width: 110px;
+                      background: url('../images/calendar.png') no-repeat center right $lightgrey;
+                      padding-left: 6px;
+                      height: 24px;
+                      line-height: 20px;
                     }
                   }
                 }
@@ -130,27 +158,49 @@
             }
           }
         }
-        #edit-field-resa-chambre-und-add-more {
-          background: $red;
+        #edit-field-resa-chambre-und-add-more,
+        .field-add-more-submit{
+          background: $black-transparent;
+          color: $white;
           border: none;
           padding: 5px 10px;
+          height: auto;
         }
       }
       #edit-field-resa-adresse {
+        fieldset {
+          border: none;
+          padding: 0;
+          margin: 0;
+        }
         legend {
           @include h1-thin;
         }
         .form-item {
-          margin: 0.5em;
+          margin: 0 0.5em 0 0;
         }
       }
       #edit-field-resa-phone {
         float: left;
         margin-right: 10px;
       }
+      #edit-field-resa-remarques {
+        clear: both;
+      }
+      #edit-actions {
+        height: 50px;
+      }
+      input#edit-submit {
+        background: $black-transparent;
+        padding: 5px 10px;
+        float: left;
+        color: $white;
+        height: auto;
+      }
     }
   }
 }
 .jspPane {
   width: 96% !important;
+  height: auto;
 }
