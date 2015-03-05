@@ -81,3 +81,83 @@ $font-base-size :16px;
     margin-top: 8%;
   }
 }
+
+@mixin background-liste {
+  background: $black-transparent;
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 13% 0 0 0;
+  width: 17%;
+  overflow: hidden;
+}
+@mixin background-detail {
+  @include background-liste;
+  margin-left: 17%;
+  padding: 5% 0 0 0;
+  top: 0;
+  border-left: 1px solid $black-transparent;
+}
+
+@mixin diago-liste {
+  width: 165%;
+  padding: 20px 40px 40px 30px;
+  background:$red;
+  transform: rotate(-10deg);
+  margin-left:-15%;
+  height:38%;
+  position:relative;
+  display:block;
+  .inverse {
+    transform: rotate(10deg);
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 100%;
+    .title-view {
+      @include h1-thin;
+      color: $white;
+    }
+    .view-content {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: 75%;
+      width: 57%;
+      a {
+        @include h2-thin;
+        line-height: em(26px);
+      }
+    }
+  }
+}
+
+@mixin diago-detail {
+  width: 165%;
+  padding: 20px 40px 40px 30px;
+  background:$red;
+  transform: rotate(-10deg);
+  margin-left:-21%;
+  height:66%;
+  position:relative;
+  display:block;
+  .inverse {
+    transform: rotate(10deg);
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 100%;
+    width: 50%;
+    .title-view {
+      @include h1-thin;
+      color: $white;
+    }
+    .view-content {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: 75%;
+      width: 57%;
+      a {
+        @include h2-thin;
+        line-height: em(26px);
+      }
+    }
+  }
+}

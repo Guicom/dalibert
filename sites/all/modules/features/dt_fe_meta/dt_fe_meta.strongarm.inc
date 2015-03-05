@@ -39,7 +39,7 @@ function dt_fe_meta_strongarm() {
     'domain' => '',
     'prefix' => 'fr',
     'weight' => '0',
-    'javascript' => 'voyQK7OuMiz6F7CrlYyOmmdp9OBHDrDmwqEiJSpwTUo',
+    'javascript' => 'm8P_Ya4Fl6Am3f-kmrJDZ_7BVMTrS22ROUac3CbtTqU',
   );
   $export['language_default'] = $strongarm;
 
@@ -243,6 +243,7 @@ function dt_fe_meta_strongarm() {
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
     'eform' => TRUE,
+    'node' => TRUE,
   );
   $export['path_alias_whitelist'] = $strongarm;
 
@@ -274,7 +275,7 @@ function dt_fe_meta_strongarm() {
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 1,
     'default_logo' => 0,
-    'logo_path' => 'public://logo-hotel-dalibert_0.png',
+    'logo_path' => 'public://logo-hotel-dalibert.png',
     'default_favicon' => 1,
     'favicon_path' => '',
     'favicon_upload' => '',

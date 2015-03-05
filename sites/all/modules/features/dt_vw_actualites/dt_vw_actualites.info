@@ -4,6 +4,7 @@ core = 7.x
 package = Dalibert
 version = 7.x-1.0
 project = dt_vw_actualites
+dependencies[] = better_exposed_filters
 dependencies[] = dt_ct_actualites
 dependencies[] = views
 features[ctools][] = views:views_default:3.0

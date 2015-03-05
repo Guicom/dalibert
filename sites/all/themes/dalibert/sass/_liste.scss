@@ -1,0 +1,21 @@
+@import "base";
+
+
+.view-actualites {
+  @include background-liste;
+  .diago {
+    @include diago-liste;
+    .view-filters {
+      .views-exposed-form {
+        label {
+          @include font-light;
+        }
+        select {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+
