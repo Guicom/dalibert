@@ -1,0 +1,11 @@
+@import "base";
+
+
+.node-type-actualites {
+  article {
+    @include background-detail;
+    .diago {
+      @include diago-detail;
+    }
+  }
+}

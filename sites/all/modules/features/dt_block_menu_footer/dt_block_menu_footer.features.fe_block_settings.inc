@@ -14,6 +14,7 @@ function dt_block_menu_footer_default_fe_block_settings() {
 
   $export['block-footer_menu_block'] = array(
     'cache' => -1,
+    'css_class' => 'block-footer-menu',
     'custom' => 0,
     'machine_name' => 'footer_menu_block',
     'module' => 'block',

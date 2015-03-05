@@ -14,7 +14,7 @@ function dt_block_sidebar_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Block découvrez';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'block_sidebar_decouvrez';
-  $fe_block_boxes->body = '<div class="inverse content-decouvrez"><a href="/reservation"><span class="bold">Découvrez</span></div>';
+  $fe_block_boxes->body = '<div class="inverse content-decouvrez"><span class="bold">Découvrez</span></div>';
 
   $export['block_sidebar_decouvrez'] = $fe_block_boxes;
 
@@ -30,7 +30,7 @@ function dt_block_sidebar_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Block lieux';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'block_sidebar_lieux';
-  $fe_block_boxes->body = '<div class="inverse content-lieux"><a href="/reservation"><span class="bold">Les vlieux</span><span class="normal">touristiques à visiter</span></div>';
+  $fe_block_boxes->body = '<div class="inverse content-lieux"><a href="/reservation"><span class="bold">Les lieux</span><span class="normal">touristiques à visiter</span></div>';
 
   $export['block_sidebar_lieux'] = $fe_block_boxes;
 

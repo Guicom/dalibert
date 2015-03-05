@@ -1,6 +1,6 @@
 @import "base";
 
-#block-block-1 {
+.reserver {
   @include block-right($red);
     a {
       display: block;
@@ -17,7 +17,7 @@
     }
 }
 
-#block-block-3 {
+.vins{
   @include block-right($grey-transparent);
   margin-top: 18px;
   a {
@@ -35,7 +35,7 @@
   }
 }
 
-#block-block-4 {
+.lieux {
   @include block-right($grey-transparent);
   margin-top: -15px;
   a {
@@ -53,10 +53,9 @@
   }
 }
 
-#block-block-5 {
+.gastro {
   @include block-right($grey-transparent);
   margin-top: -15px;
-  a {
     display: block;
     span.bold{
       @include h2-normal;
@@ -66,26 +65,20 @@
       display: block;
     }
     &:hover span{
-      text-decoration: underline;
-    }
-  }
+           text-decoration: underline;
+         }
 }
 
-#block-block-6 {
+.decouvrez {
   @include block-right(none);
   height: 15px;
   margin-top: 0;
-  a {
-    display: block;
-    span.bold{
-      @include h2-normal;
-    }
-    span.normal {
-      @include h2-thin;
-      display: block;
-    }
-    &:hover span{
-      text-decoration: underline;
-    }
+  .inverse {
+    margin-top: 3%;
+    width: 37%;
+    text-align: center;
+  }
+  span.bold{
+    @include h1-normal;
   }
 }

@@ -14,6 +14,7 @@ function dt_block_sidebar_default_fe_block_settings() {
 
   $export['block-block_sidebar_decouvrez'] = array(
     'cache' => -1,
+    'css_class' => 'decouvrez',
     'custom' => 0,
     'machine_name' => 'block_sidebar_decouvrez',
     'module' => 'block',
@@ -52,6 +53,7 @@ function dt_block_sidebar_default_fe_block_settings() {
 
   $export['block-block_sidebar_gastro'] = array(
     'cache' => -1,
+    'css_class' => 'gastro',
     'custom' => 0,
     'machine_name' => 'block_sidebar_gastro',
     'module' => 'block',
@@ -90,6 +92,7 @@ function dt_block_sidebar_default_fe_block_settings() {
 
   $export['block-block_sidebar_lieux'] = array(
     'cache' => -1,
+    'css_class' => 'lieux',
     'custom' => 0,
     'machine_name' => 'block_sidebar_lieux',
     'module' => 'block',
@@ -128,6 +131,7 @@ function dt_block_sidebar_default_fe_block_settings() {
 
   $export['block-sidebar_block_vins'] = array(
     'cache' => -1,
+    'css_class' => 'vins',
     'custom' => 0,
     'machine_name' => 'sidebar_block_vins',
     'module' => 'block',
