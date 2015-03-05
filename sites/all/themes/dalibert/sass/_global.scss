@@ -47,6 +47,7 @@ input, select {
 select {
   background: url('../images/select.png') no-repeat right center $lightgrey;
   -webkit-appearance: none;
+  -moz-appearance: none;
   height: 24px;
   line-height: 20px;
   padding-left: 6px;

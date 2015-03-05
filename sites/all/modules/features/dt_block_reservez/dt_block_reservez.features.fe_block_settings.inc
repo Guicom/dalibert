@@ -31,7 +31,7 @@ function dt_block_reservez_default_fe_block_settings() {
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'dalibert',
-        'weight' => -13,
+        'weight' => -16,
       ),
       'seven' => array(
         'region' => '',

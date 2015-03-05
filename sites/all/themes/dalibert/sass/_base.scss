@@ -58,3 +58,26 @@ $font-base-size :16px;
   @include font-normal;
   font-size: em(20px);
 }
+
+
+/**diagonal **/
+
+@mixin block-right($transp-color) {
+  width: 248%;
+  padding: 20px 40px 40px 30px;
+  background:$transp-color;
+  transform: rotate(-10deg);
+  margin-top:50px;
+  margin-left:-12%;
+  height:55px;
+  position:relative;
+  display:block;
+  -moz-box-shadow: 0px 0px 5px 0px $black-transparent;
+  -webkit-box-shadow: 0px 0px 5px 0px $black-transparent;
+  -o-box-shadow: 0px 0px 5px 0px $black-transparent;
+  box-shadow: 0px 0px 5px 0px $black-transparent;
+  .inverse {
+    transform: rotate(10deg);
+    margin-top: 8%;
+  }
+}

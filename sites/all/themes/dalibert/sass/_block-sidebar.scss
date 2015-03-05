@@ -1,0 +1,91 @@
+@import "base";
+
+#block-block-1 {
+  @include block-right($red);
+    a {
+      display: block;
+      span.bold{
+        @include h1-normal;
+      }
+      span.normal {
+        @include h1-thin;
+        display: block;
+      }
+      &:hover span{
+        text-decoration: underline;
+      }
+    }
+}
+
+#block-block-3 {
+  @include block-right($grey-transparent);
+  margin-top: 18px;
+  a {
+    display: block;
+    span.bold{
+      @include h2-normal;
+    }
+    span.normal {
+      @include h2-thin;
+      display: block;
+    }
+    &:hover span{
+      text-decoration: underline;
+    }
+  }
+}
+
+#block-block-4 {
+  @include block-right($grey-transparent);
+  margin-top: -15px;
+  a {
+    display: block;
+    span.bold{
+      @include h2-normal;
+    }
+    span.normal {
+      @include h2-thin;
+      display: block;
+    }
+    &:hover span{
+      text-decoration: underline;
+    }
+  }
+}
+
+#block-block-5 {
+  @include block-right($grey-transparent);
+  margin-top: -15px;
+  a {
+    display: block;
+    span.bold{
+      @include h2-normal;
+    }
+    span.normal {
+      @include h2-thin;
+      display: block;
+    }
+    &:hover span{
+      text-decoration: underline;
+    }
+  }
+}
+
+#block-block-6 {
+  @include block-right(none);
+  height: 15px;
+  margin-top: 0;
+  a {
+    display: block;
+    span.bold{
+      @include h2-normal;
+    }
+    span.normal {
+      @include h2-thin;
+      display: block;
+    }
+    &:hover span{
+      text-decoration: underline;
+    }
+  }
+}
