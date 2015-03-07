@@ -6,6 +6,59 @@
     @include background-detail;
     .diago {
       @include diago-detail;
+      .inverse {
+        .field-name-field-actu-theme {
+          border-top: solid 1px $white;
+          border-bottom: solid 1px $white;
+          padding: 5% 0;
+          width: 95%;
+          .field-label {
+            @include main-p;
+          }
+          .field-item {
+            @extend .field-label;
+            font-weight: 300;
+          }
+        }
+        .field-name-field-actu-texte {
+          padding-right: 5%;
+        }
+      }
+    }
+  }
+}
+
+.node-type-chambre {
+  article {
+    @include background-detail;
+    .diago {
+      @include diago-detail;
+      .field-name-field-chbre-sd {
+        @include main-p;
+        padding: 2% 0;
+        border-bottom: solid 1px $white;
+        border-top: solid 1px $white;
+        width: auto;
+      }
+      .field-name-field-chbre-lit {
+        @extend .field-name-field-chbre-sd;
+        border-top: none;
+        .field-label {
+          font-weight: 300;
+        }
+      }
+      .field-name-field-chbre-equipement {
+        @extend .field-name-field-chbre-sd;
+        border-top: none;
+        .field-label {
+          font-weight: 300;
+        }
+        .field-item {
+          &:before {
+            content: "- ";
+          }
+        }
+      }
     }
   }
 }

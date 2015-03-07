@@ -18,4 +18,13 @@
   }
 }
 
+.view-chambres {
+  @include background-liste;
+  .diago {
+    @include diago-liste;
+    .view-content {
+      padding: .5em 1em 0 0;
+    }
+  }
+}
 

@@ -59,6 +59,14 @@ $font-base-size :16px;
   font-size: em(20px);
 }
 
+@mixin main-p {
+  font-family: $main-font;
+  color: $white;
+  font-weight: 300;
+  font-size: em(13px);
+  line-height: em(20px);
+}
+
 
 /**diagonal **/
 
@@ -119,12 +127,26 @@ $font-base-size :16px;
     }
     .view-content {
       overflow-x: hidden;
-      overflow-y: scroll;
+      overflow-y: auto;
       height: 75%;
       width: 57%;
       a {
         @include h2-thin;
         line-height: em(26px);
+      }
+      .views-field-title {
+        a {
+          display: block;
+          width: 95%;
+          padding: 5px 0 5px 10px;
+          border-bottom: solid 1px $black-transparent;
+          &:hover {
+            background: $black-transparent;
+          }
+          &.active {
+            @include h2-normal;
+          }
+        }
       }
     }
   }
@@ -143,21 +165,16 @@ $font-base-size :16px;
     transform: rotate(10deg);
     margin-top: 5%;
     margin-left: 10%;
-    height: 100%;
-    width: 50%;
+    height: 90%;
+    width: 52%;
     .title-view {
       @include h1-thin;
       color: $white;
     }
-    .view-content {
-      overflow-x: hidden;
-      overflow-y: scroll;
-      height: 75%;
-      width: 57%;
-      a {
-        @include h2-thin;
-        line-height: em(26px);
-      }
-    }
+  }
+  .photos {
+    @include main-p;
+    margin-top: 10%;
+    transform: rotate(10deg);
   }
 }
