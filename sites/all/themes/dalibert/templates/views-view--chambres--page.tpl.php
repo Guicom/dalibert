@@ -28,20 +28,16 @@
  */
 ?>
 <div class="<?php print $classes; ?>">
-    <div class="diago actualites">
-        <div class="inverse actualites-page">
-            <div class="actualites-title title-view">
-                <?php print t('Actualités'); ?>
+    <div class="diago chambres">
+        <div class="inverse chambres-page">
+            <div class="chambres-title title-view">
+                <?php print t('Chambres'); ?>
             </div>
-            <?php if ($exposed): ?>
-                <div class="view-filters">
-                    <?php print $exposed; ?>
-                </div>
-            <?php endif; ?>
             <?php if ($rows): ?>
                 <div class="view-content">
                     <?php print $rows; ?>
                 </div>
+
             <?php endif; ?>
         </div>
     </div>
