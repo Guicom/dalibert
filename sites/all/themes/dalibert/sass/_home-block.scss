@@ -1,0 +1,73 @@
+@import "base";
+
+
+#block-views-home-block-presentation {
+  @include background-liste;
+  .diago {
+    @include diago-liste;
+    .view-content {
+      padding: .5em 1em 0 0;
+    }
+  }
+}
+
+#block-views-home-block-1 {
+  @include background-liste;
+  padding: 5% 0 0 0;
+  margin-left: 326px;
+  .views-row {
+    width: 395px;
+    padding: 0;
+    transform: rotate(-10deg);
+    margin-top:50px;
+    margin-left:-30px;
+    height:265px;
+    position:relative;
+    display:block;
+    overflow: hidden;
+    .diago-titre {
+      background: $red-non-transparent;
+      margin-left: 30px;
+      height: 110px;
+      width: 363px;
+      position: relative;
+      a {
+        position: absolute;
+        top: 40px;
+        left: 57px;
+        h1 {
+          margin: 0;
+          font-size: em(35px);
+          &.bold {
+            font-weight: 500;
+          }
+          &.thin {
+            font-weight: 300;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+    .titre-chambre {
+      transform: rotate(10deg);
+    }
+    .diago-sep {
+      background: $red;
+      height: 55px;
+      width: 363px;
+      margin-top: -10px;
+      position: relative;
+      z-index: -4;
+    }
+    .image-chambre {
+      transform: rotate(10deg);
+      width: 326px;
+      margin: -76px 0 0 20px;
+      position: relative;
+      z-index: -5;
+    }
+    &.views-row-2 {
+      margin-top: 100px;
+    }
+  }
+}

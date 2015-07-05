@@ -14,7 +14,7 @@ function dt_block_reservez_default_fe_block_settings() {
 
   $export['block-bloc_reservez'] = array(
     'cache' => -1,
-    'css_class' => 'reserver',
+    'css_class' => '',
     'custom' => 0,
     'machine_name' => 'bloc_reservez',
     'module' => 'block',

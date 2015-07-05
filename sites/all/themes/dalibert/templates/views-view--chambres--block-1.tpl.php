@@ -31,7 +31,7 @@
     <div class="diago chambres">
         <div class="inverse chambres-page">
             <div class="chambres-title title-view">
-                <?php print t('Chambres'); ?>
+                <h1><?php print t('Chambres'); ?></h1>
             </div>
             <?php if ($rows): ?>
             <div class="view-content">
