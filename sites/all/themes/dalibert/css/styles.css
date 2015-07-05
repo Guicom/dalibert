@@ -780,9 +780,9 @@ table {
   /* line 162, ../sass/layouts/_responsive.scss */
   #content {
     float: left;
-    width: 75%;
+    width: 37.5%;
     margin-left: 12.5%;
-    margin-right: -87.5%;
+    margin-right: -50%;
   }
 
   /* Span 1 column, starting in 5th column from left. */
@@ -1225,7 +1225,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 
 /* The inline field label used by the Fences module. */
 /* line 412, ../sass/components/_misc.scss */
-span.field-label {
+span.field-label, .node-type-actualites article .diago .inverse .field-name-field-actu-theme span.field-item {
   padding: 0 1em 0 0;
 }
 
@@ -1727,6 +1727,12 @@ tr.selected td {
 /* @import "theme-B"; */
 /* Colors*/
 /* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
 /* line 3, ../sass/_region.scss */
 #navigation {
   position: fixed;
@@ -1743,82 +1749,175 @@ tr.selected td {
   position: fixed;
   height: 100%;
   top: 0;
-  background: #444242;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
-/* line 18, ../sass/_region.scss */
+/* line 19, ../sass/_region.scss */
 #footer {
-  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
 }
 
 /* Colors*/
 /* Font */
-/* line 4, ../sass/_global.scss */
-p, h1, h2, h3, span, a, label {
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 3, ../sass/_global.scss */
+body {
+  position: fixed;
+}
+
+/* line 8, ../sass/_global.scss */
+p, h1, h2, h3, span, a, label, input, select {
   font-family: "open sans";
   font-weight: 300;
   text-decoration: none;
 }
 
-/* line 9, ../sass/_global.scss */
+/* line 13, ../sass/_global.scss */
 #main {
   padding: 0;
-}
-
-/* line 13, ../sass/_global.scss */
-p, label, a, span {
-  font-size: 0.875em;
+  margin: 0;
 }
 
 /* line 17, ../sass/_global.scss */
-h1 {
-  font-size: 1.625em;
+#content {
+  padding: 0;
 }
 
-/* line 20, ../sass/_global.scss */
-h2 {
-  font-size: 1.25em;
-}
-
-/* line 23, ../sass/_global.scss */
-h3 {
-  font-size: 1em;
+/* line 21, ../sass/_global.scss */
+p, label, a, span {
+  font-size: 0.8125em;
+  color: #fff;
+  line-height: 1.25em;
 }
 
 /* line 27, ../sass/_global.scss */
-input {
+h1 {
+  font-size: 1.625em;
+  color: #fff;
+}
+
+/* line 31, ../sass/_global.scss */
+h2 {
+  font-size: 1.25em;
+  color: #fff;
+}
+
+/* line 35, ../sass/_global.scss */
+h3 {
+  font-size: 1em;
+  color: #fff;
+  line-height: 2em;
+}
+
+/* line 41, ../sass/_global.scss */
+input, select {
+  font-size: 0.8125em;
   background: #F2F2F2;
   border: none;
+  border: none;
+  padding-left: 6px;
+  height: 24px;
+  line-height: 20px;
+}
+
+/* line 51, ../sass/_global.scss */
+select {
+  background: url("../images/select.png") no-repeat right center #F2F2F2;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 24px;
+  line-height: 20px;
+  padding-left: 6px;
+}
+
+/* line 60, ../sass/_global.scss */
+#page {
+  z-index: 1;
+  position: fixed;
+}
+
+/* line 65, ../sass/_global.scss */
+.region-bottom {
+  left: 12.5%;
+  width: 87.5%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  background: url("../images/test.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardis├®e */
+}
+
+/* line 77, ../sass/_global.scss */
+.views-slideshow-controls-bottom {
+  width: 200px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: block;
+  visibility: visible;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+/* line 87, ../sass/_global.scss */
+.views-slideshow-controls-bottom img {
+  width: 180px !important;
+  margin: 10px;
 }
 
 /* Colors*/
 /* Font */
-/* line 3, ../sass/_menu.scss */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 4, ../sass/_menu.scss */
+#logo {
+  width: 100%;
+  height: auto;
+}
+
+/* line 9, ../sass/_menu.scss */
 #main-menu {
   padding: 30px 0 0 0;
 }
-/* line 5, ../sass/_menu.scss */
+/* line 11, ../sass/_menu.scss */
 #main-menu ul.links {
   padding-left: 15%;
+  float: left;
+  width: 85%;
+  position: absolute;
+  left: 0;
 }
-/* line 7, ../sass/_menu.scss */
+/* line 17, ../sass/_menu.scss */
 #main-menu ul.links li {
   float: none;
   border-bottom: solid 1px #4a4949;
   padding: 5px 0;
 }
-/* line 11, ../sass/_menu.scss */
+/* line 21, ../sass/_menu.scss */
 #main-menu ul.links li:last-of-type {
   border: none;
 }
-/* line 14, ../sass/_menu.scss */
+/* line 24, ../sass/_menu.scss */
 #main-menu ul.links li a {
   color: #fff;
   text-transform: uppercase;
 }
-/* line 17, ../sass/_menu.scss */
+/* line 27, ../sass/_menu.scss */
 #main-menu ul.links li a.active {
   font-family: "open sans";
   font-weight: 400;
@@ -1826,129 +1925,1147 @@ input {
 
 /* Colors*/
 /* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
 /* line 5, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content {
   width: 40%;
   overflow: hidden;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  padding-left: 10px;
 }
-/* line 10, ../sass/_reservation.scss */
+/* line 12, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #page-title {
+  float: right;
+  margin-top: 15%;
+  margin-right: 5%;
+  z-index: 5;
+  position: relative;
+}
+/* line 19, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form {
   width: 200%;
   padding-left: 20%;
   padding-top: 30px;
-  background: rgba(242, 38, 19, 0.5);
+  background: rgba(242, 38, 19, 0.7);
   transform: rotate(-10deg);
   margin-left: -16%;
-  height: auto;
+  height: 72%;
   position: relative;
   display: block;
+  margin-top: 9%;
 }
-/* line 20, ../sass/_reservation.scss */
+/* line 30, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form > div {
   transform: rotate(10deg);
   width: 46%;
+  overflow-y: scroll;
+  height: 83%;
+  overflow-x: hidden;
+  margin-top: 3%;
+  margin-left: -1%;
 }
-/* line 24, ../sass/_reservation.scss */
+/* line 39, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-nom {
   float: left;
 }
-/* line 27, ../sass/_reservation.scss */
+/* line 42, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-prenom {
   float: left;
   margin-left: 10px;
 }
-/* line 31, ../sass/_reservation.scss */
+/* line 46, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre {
   clear: both;
 }
-/* line 33, ../sass/_reservation.scss */
+/* line 48, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre .tabledrag-toggle-weight {
+  display: none;
+}
+/* line 51, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table {
   width: 100%;
   border-top: solid 1px rgba(0, 0, 0, 0.5);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
 }
-/* line 38, ../sass/_reservation.scss */
+/* line 59, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table thead tr th {
   border: none;
+  padding: 10px;
 }
-/* line 40, ../sass/_reservation.scss */
+/* line 62, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table thead tr th label {
   font-family: "open sans";
   font-weight: 300;
   font-size: 1.5625em;
 }
-/* line 46, ../sass/_reservation.scss */
+/* line 68, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody {
   border: none;
   width: auto;
 }
-/* line 49, ../sass/_reservation.scss */
+/* line 71, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr {
   background: none;
-  border: none;
+  border-top: 1px solid #4a4949;
+  border-bottom: none;
 }
-/* line 53, ../sass/_reservation.scss */
+/* line 75, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td {
+  padding: 10px;
+}
+/* line 77, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td.field-multiple-drag {
   display: none;
 }
-/* line 56, ../sass/_reservation.scss */
+/* line 80, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td > input {
+  background: url("../images/cross.png") no-repeat left center;
+  height: 20px;
+  padding-left: 20px;
+  clear: none;
+  float: right;
+  color: #fff;
+  line-height: 20px;
+}
+/* line 89, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .ajax-processed {
+  background: url("../images/cross.png") no-repeat left center;
+  height: 20px;
+  padding-left: 20px;
+  clear: none;
+  float: right;
+  color: #fff;
+  line-height: 20px;
+}
+/* line 98, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-chambre {
   float: left;
+  padding-top: 21px;
+  padding-bottom: 10px;
 }
-/* line 59, ../sass/_reservation.scss */
+/* line 103, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-nbre-pers {
   float: left;
   margin-left: 10px;
+  width: 100px;
+  padding-bottom: 10px;
+  padding-top: 13px;
 }
-/* line 63, ../sass/_reservation.scss */
+/* line 109, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-nbre-pers label {
+  line-height: 1.125em;
+  margin-bottom: 2px;
+}
+/* line 113, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-nbre-pers select {
+  width: 55px;
+}
+/* line 117, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date {
-  clear: both;
+  float: left;
 }
-/* line 65, ../sass/_reservation.scss */
+/* line 119, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
-/* line 69, ../sass/_reservation.scss */
+/* line 123, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset legend > .fieldset-legend {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.25em;
+}
+/* line 126, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .start-date-wrapper {
   clear: none;
   float: left;
   width: auto;
 }
-/* line 73, ../sass/_reservation.scss */
+/* line 130, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .start-date-wrapper .date-padding {
   padding: 0;
 }
-/* line 77, ../sass/_reservation.scss */
+/* line 134, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .end-date-wrapper {
   clear: none;
   float: left;
   width: auto;
   margin-left: 10px;
 }
-/* line 82, ../sass/_reservation.scss */
+/* line 139, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .end-date-wrapper .date-padding {
   padding: 0;
 }
-/* line 85, ../sass/_reservation.scss */
+/* line 142, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .end-date-wrapper div.form-type-date-popup > label {
-  float: left;
-  line-height: 90px;
-  margin-right: 15px;
+  display: none;
 }
-/* line 97, ../sass/_reservation.scss */
-.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre #edit-field-resa-chambre-und-add-more {
-  background: rgba(242, 38, 19, 0.5);
+/* line 146, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset .description {
+  display: none;
+}
+/* line 149, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre table tbody tr td .field-name-field-resa-fc-date fieldset input {
+  width: 110px;
+  background: url("../images/calendar.png") no-repeat center right #F2F2F2;
+  padding-left: 6px;
+  height: 24px;
+  line-height: 20px;
+}
+/* line 162, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre #edit-field-resa-chambre-und-add-more,
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-chambre .field-add-more-submit {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
   border: none;
+  padding: 5px 10px;
+  height: auto;
 }
-/* line 103, ../sass/_reservation.scss */
+/* line 172, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-adresse fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 177, ../sass/_reservation.scss */
 .page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-adresse legend {
   font-family: "open sans";
   font-weight: 300;
   font-size: 1.5625em;
 }
+/* line 180, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-adresse .form-item {
+  margin: 0 0.5em 0 0;
+}
+/* line 184, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-phone {
+  float: left;
+  margin-right: 10px;
+}
+/* line 188, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-field-resa-remarques {
+  clear: both;
+}
+/* line 191, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form #edit-actions {
+  height: 50px;
+}
+/* line 194, ../sass/_reservation.scss */
+.page-eform-submit-reservation #content #reservation-entityform-edit-form input#edit-submit {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  float: left;
+  color: #fff;
+  height: auto;
+}
+
+/* line 204, ../sass/_reservation.scss */
+.jspPane {
+  width: 96% !important;
+  height: auto;
+}
 
 /* Colors*/
 /* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 3, ../sass/_block-sidebar.scss */
+.reserver {
+  width: 275px;
+  padding: 0;
+  background: rgba(242, 38, 19, 0.7);
+  transform: rotate(-10deg);
+  margin-top: 50px;
+  margin-left: -26px;
+  height: 115px;
+  position: relative;
+  display: block;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 90, ../sass/_base.scss */
+.reserver .inverse {
+  transform: rotate(10deg);
+  padding-top: 42px;
+  padding-left: 35px;
+}
+/* line 5, ../sass/_block-sidebar.scss */
+.reserver .reserver-content {
+  display: block;
+}
+/* line 7, ../sass/_block-sidebar.scss */
+.reserver .reserver-content span.bold {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.5625em;
+}
+/* line 10, ../sass/_block-sidebar.scss */
+.reserver .reserver-content span.normal {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.5625em;
+  display: block;
+}
+/* line 15, ../sass/_block-sidebar.scss */
+.reserver:hover {
+  background: rgba(51, 51, 51, 0.8);
+}
+
+/* line 20, ../sass/_block-sidebar.scss */
+.vins {
+  width: 275px;
+  padding: 0;
+  background: rgba(51, 51, 51, 0.8);
+  transform: rotate(-10deg);
+  margin-top: 50px;
+  margin-left: -26px;
+  height: 115px;
+  position: relative;
+  display: block;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 18px;
+}
+/* line 90, ../sass/_base.scss */
+.vins .inverse {
+  transform: rotate(10deg);
+  padding-top: 42px;
+  padding-left: 35px;
+}
+/* line 23, ../sass/_block-sidebar.scss */
+.vins .inverse {
+  margin-top: 22px;
+}
+/* line 26, ../sass/_block-sidebar.scss */
+.vins .vin-content {
+  display: block;
+}
+/* line 28, ../sass/_block-sidebar.scss */
+.vins .vin-content span.bold {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.25em;
+}
+/* line 31, ../sass/_block-sidebar.scss */
+.vins .vin-content span.normal {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.25em;
+  display: block;
+}
+/* line 35, ../sass/_block-sidebar.scss */
+.vins .vin-content:hover .vins {
+  background: red;
+}
+/* line 39, ../sass/_block-sidebar.scss */
+.vins:hover {
+  background: rgba(242, 38, 19, 0.7);
+}
+
+/* line 44, ../sass/_block-sidebar.scss */
+.lieux {
+  width: 275px;
+  padding: 0;
+  background: rgba(51, 51, 51, 0.8);
+  transform: rotate(-10deg);
+  margin-top: 50px;
+  margin-left: -26px;
+  height: 115px;
+  position: relative;
+  display: block;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  margin-top: -15px;
+}
+/* line 90, ../sass/_base.scss */
+.lieux .inverse {
+  transform: rotate(10deg);
+  padding-top: 42px;
+  padding-left: 35px;
+}
+/* line 47, ../sass/_block-sidebar.scss */
+.lieux .inverse {
+  margin-top: 22px;
+}
+/* line 50, ../sass/_block-sidebar.scss */
+.lieux .lieux-content {
+  display: block;
+}
+/* line 52, ../sass/_block-sidebar.scss */
+.lieux .lieux-content span.bold {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.25em;
+}
+/* line 55, ../sass/_block-sidebar.scss */
+.lieux .lieux-content span.normal {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.25em;
+  display: block;
+}
+/* line 60, ../sass/_block-sidebar.scss */
+.lieux:hover {
+  background: rgba(242, 38, 19, 0.7);
+}
+
+/* line 65, ../sass/_block-sidebar.scss */
+.gastro {
+  width: 275px;
+  padding: 0;
+  background: rgba(51, 51, 51, 0.8);
+  transform: rotate(-10deg);
+  margin-top: 50px;
+  margin-left: -26px;
+  height: 115px;
+  position: relative;
+  display: block;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  margin-top: -15px;
+}
+/* line 90, ../sass/_base.scss */
+.gastro .inverse {
+  transform: rotate(10deg);
+  padding-top: 42px;
+  padding-left: 35px;
+}
+/* line 68, ../sass/_block-sidebar.scss */
+.gastro .inverse {
+  margin-top: 22px;
+}
+/* line 71, ../sass/_block-sidebar.scss */
+.gastro span.bold {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.25em;
+}
+/* line 74, ../sass/_block-sidebar.scss */
+.gastro span.normal {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.25em;
+  display: block;
+}
+/* line 78, ../sass/_block-sidebar.scss */
+.gastro:hover {
+  background: rgba(242, 38, 19, 0.7);
+}
+
+/* line 83, ../sass/_block-sidebar.scss */
+.decouvrez {
+  width: 275px;
+  padding: 0;
+  background: none;
+  transform: rotate(-10deg);
+  margin-top: 50px;
+  margin-left: -26px;
+  height: 115px;
+  position: relative;
+  display: block;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+  display: block;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+/* line 90, ../sass/_base.scss */
+.decouvrez .inverse {
+  transform: rotate(10deg);
+  padding-top: 42px;
+  padding-left: 35px;
+}
+/* line 91, ../sass/_block-sidebar.scss */
+.decouvrez .inverse {
+  margin-top: 6px;
+  width: 150px;
+  text-align: center;
+}
+/* line 96, ../sass/_block-sidebar.scss */
+.decouvrez span.bold {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.5625em;
+}
+
+/* Colors*/
+/* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 3, ../sass/_scrollbar.scss */
+.jspVerticalBar {
+  background: none;
+}
+
+/* line 6, ../sass/_scrollbar.scss */
+.jspTrack {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 8, ../sass/_scrollbar.scss */
+.jspTrack .jspDrag {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 13, ../sass/_scrollbar.scss */
+.jspArrowUp,
+.jspArrowUp.jspDisabled {
+  background: url("../images/scrollup.png") no-repeat center center;
+}
+
+/* line 17, ../sass/_scrollbar.scss */
+.jspArrowDown,
+.jspArrowDown.jspDisabled {
+  background: url("../images/scrolldown.png") no-repeat center center;
+}
+
+/* Colors*/
+/* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 4, ../sass/_menu-footer.scss */
+.block-footer-menu {
+  width: 1062px;
+  padding: 20px 40px 40px 30px;
+  background: rgba(51, 51, 51, 0.8);
+  transform: rotate(-15deg);
+  margin-top: -144px;
+  margin-left: -291px;
+  height: 171px;
+  position: absolute;
+  display: block;
+}
+/* line 14, ../sass/_menu-footer.scss */
+.block-footer-menu .content-footer {
+  transform: rotate(15deg);
+  margin-top: 0;
+  margin-left: 59px;
+  width: 535px;
+  height: 100%;
+}
+/* line 20, ../sass/_menu-footer.scss */
+.block-footer-menu .content-footer p {
+  float: right;
+  display: inline-block;
+  font-size: 0.75em;
+  margin: 0;
+}
+/* line 25, ../sass/_menu-footer.scss */
+.block-footer-menu .content-footer p.menu-footer {
+  clear: both;
+}
+
+/* Colors*/
+/* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 4, ../sass/_liste.scss */
+.view-actualites {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 13% 0 0 0;
+  width: 326px;
+  overflow: hidden;
+}
+/* line 6, ../sass/_liste.scss */
+.view-actualites .diago {
+  width: 608px;
+  padding: 20px 40px 40px 30px;
+  background: rgba(242, 38, 19, 0.7);
+  transform: rotate(-10deg);
+  margin-left: -49px;
+  height: 432px;
+  position: relative;
+  display: block;
+}
+/* line 131, ../sass/_base.scss */
+.view-actualites .diago .inverse {
+  transform: rotate(10deg);
+  margin-top: 27px;
+  margin-left: 27px;
+  height: 100%;
+}
+/* line 137, ../sass/_base.scss */
+.view-actualites .diago .inverse .title-view h1 {
+  margin: 0;
+}
+/* line 141, ../sass/_base.scss */
+.view-actualites .diago .inverse .view-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 291px;
+  width: 291px;
+}
+/* line 146, ../sass/_base.scss */
+.view-actualites .diago .inverse .view-content a {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.625em;
+}
+/* line 151, ../sass/_base.scss */
+.view-actualites .diago .inverse .view-content .views-field-title a {
+  display: block;
+  width: 265px;
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}
+/* line 156, ../sass/_base.scss */
+.view-actualites .diago .inverse .view-content .views-field-title a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 159, ../sass/_base.scss */
+.view-actualites .diago .inverse .view-content .views-field-title a.active {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.25em;
+}
+/* line 10, ../sass/_liste.scss */
+.view-actualites .diago .view-filters .views-exposed-form label {
+  font-family: "open sans";
+  font-weight: 300;
+}
+/* line 13, ../sass/_liste.scss */
+.view-actualites .diago .view-filters .views-exposed-form select {
+  width: 230px;
+}
+
+/* line 21, ../sass/_liste.scss */
+.view-chambres {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 13% 0 0 0;
+  width: 326px;
+  overflow: hidden;
+}
+/* line 23, ../sass/_liste.scss */
+.view-chambres .diago {
+  width: 608px;
+  padding: 20px 40px 40px 30px;
+  background: rgba(242, 38, 19, 0.7);
+  transform: rotate(-10deg);
+  margin-left: -49px;
+  height: 432px;
+  position: relative;
+  display: block;
+}
+/* line 131, ../sass/_base.scss */
+.view-chambres .diago .inverse {
+  transform: rotate(10deg);
+  margin-top: 27px;
+  margin-left: 27px;
+  height: 100%;
+}
+/* line 137, ../sass/_base.scss */
+.view-chambres .diago .inverse .title-view h1 {
+  margin: 0;
+}
+/* line 141, ../sass/_base.scss */
+.view-chambres .diago .inverse .view-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 291px;
+  width: 291px;
+}
+/* line 146, ../sass/_base.scss */
+.view-chambres .diago .inverse .view-content a {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.625em;
+}
+/* line 151, ../sass/_base.scss */
+.view-chambres .diago .inverse .view-content .views-field-title a {
+  display: block;
+  width: 265px;
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}
+/* line 156, ../sass/_base.scss */
+.view-chambres .diago .inverse .view-content .views-field-title a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 159, ../sass/_base.scss */
+.view-chambres .diago .inverse .view-content .views-field-title a.active {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.25em;
+}
+/* line 25, ../sass/_liste.scss */
+.view-chambres .diago .view-content {
+  padding: .5em 1em 0 0;
+}
+
+/* Colors*/
+/* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 5, ../sass/_detail.scss */
+.node-type-actualites article {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 13% 0 0 0;
+  width: 326px;
+  overflow: hidden;
+  margin-left: 326px;
+  padding: 5% 0 0 0;
+  top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+/* line 7, ../sass/_detail.scss */
+.node-type-actualites article .diago {
+  width: 607px;
+  padding: 20px 40px 40px 30px;
+  background: rgba(242, 38, 19, 0.7);
+  transform: rotate(-10deg);
+  margin-left: -68px;
+  height: 635px;
+  position: relative;
+  display: block;
+}
+/* line 180, ../sass/_base.scss */
+.node-type-actualites article .diago .inverse {
+  transform: rotate(10deg);
+  margin-top: 27px;
+  margin-left: 54px;
+  height: 581px;
+  width: 296px;
+}
+/* line 186, ../sass/_base.scss */
+.node-type-actualites article .diago .inverse .title-view {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.5625em;
+  color: #fff;
+}
+/* line 191, ../sass/_base.scss */
+.node-type-actualites article .diago .photos {
+  font-family: "open sans";
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 1.25em;
+  margin-top: 55px;
+  transform: rotate(10deg);
+}
+/* line 10, ../sass/_detail.scss */
+.node-type-actualites article .diago .inverse .field-name-field-actu-theme {
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  padding: 5% 0;
+  width: 95%;
+}
+/* line 15, ../sass/_detail.scss */
+.node-type-actualites article .diago .inverse .field-name-field-actu-theme .field-label, .node-type-actualites article .diago .inverse .field-name-field-actu-theme .field-item {
+  font-family: "open sans";
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 1.25em;
+}
+/* line 18, ../sass/_detail.scss */
+.node-type-actualites article .diago .inverse .field-name-field-actu-theme .field-item {
+  font-weight: 300;
+}
+/* line 23, ../sass/_detail.scss */
+.node-type-actualites article .diago .inverse .field-name-field-actu-texte {
+  padding-right: 5%;
+}
+
+/* line 32, ../sass/_detail.scss */
+.node-type-chambre article {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 13% 0 0 0;
+  width: 326px;
+  overflow: hidden;
+  margin-left: 326px;
+  padding: 5% 0 0 0;
+  top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+/* line 34, ../sass/_detail.scss */
+.node-type-chambre article .diago {
+  width: 607px;
+  padding: 20px 40px 40px 30px;
+  background: rgba(242, 38, 19, 0.7);
+  transform: rotate(-10deg);
+  margin-left: -68px;
+  height: 635px;
+  position: relative;
+  display: block;
+}
+/* line 180, ../sass/_base.scss */
+.node-type-chambre article .diago .inverse {
+  transform: rotate(10deg);
+  margin-top: 27px;
+  margin-left: 54px;
+  height: 581px;
+  width: 296px;
+}
+/* line 186, ../sass/_base.scss */
+.node-type-chambre article .diago .inverse .title-view {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.5625em;
+  color: #fff;
+}
+/* line 191, ../sass/_base.scss */
+.node-type-chambre article .diago .photos {
+  font-family: "open sans";
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 1.25em;
+  margin-top: 55px;
+  transform: rotate(10deg);
+}
+/* line 36, ../sass/_detail.scss */
+.node-type-chambre article .diago .field-name-field-chbre-sd, .node-type-chambre article .diago .field-name-field-chbre-lit, .node-type-chambre article .diago .field-name-field-chbre-equipement {
+  font-family: "open sans";
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8125em;
+  line-height: 1.25em;
+  padding: 2% 1% 2% 0;
+  border-bottom: solid 1px #fff;
+  border-top: solid 1px #fff;
+  width: auto;
+}
+/* line 43, ../sass/_detail.scss */
+.node-type-chambre article .diago .field-name-field-chbre-lit {
+  border-top: none;
+}
+/* line 46, ../sass/_detail.scss */
+.node-type-chambre article .diago .field-name-field-chbre-lit .field-label, .node-type-chambre .node-type-actualites article .diago .field-name-field-chbre-lit .inverse .field-name-field-actu-theme .field-item, .node-type-actualites .node-type-chambre article .diago .field-name-field-chbre-lit .inverse .field-name-field-actu-theme .field-item, .node-type-chambre .node-type-actualites article .diago .inverse .field-name-field-actu-theme .field-name-field-chbre-lit .field-item, .node-type-actualites .node-type-chambre article .diago .inverse .field-name-field-actu-theme .field-name-field-chbre-lit .field-item {
+  font-weight: 300;
+}
+/* line 50, ../sass/_detail.scss */
+.node-type-chambre article .diago .field-name-field-chbre-equipement {
+  border-top: none;
+}
+/* line 53, ../sass/_detail.scss */
+.node-type-chambre article .diago .field-name-field-chbre-equipement .field-label, .node-type-chambre .node-type-actualites article .diago .field-name-field-chbre-equipement .inverse .field-name-field-actu-theme .field-item, .node-type-actualites .node-type-chambre article .diago .field-name-field-chbre-equipement .inverse .field-name-field-actu-theme .field-item, .node-type-chambre .node-type-actualites article .diago .inverse .field-name-field-actu-theme .field-name-field-chbre-equipement .field-item, .node-type-actualites .node-type-chambre article .diago .inverse .field-name-field-actu-theme .field-name-field-chbre-equipement .field-item {
+  font-weight: 300;
+}
+/* line 57, ../sass/_detail.scss */
+.node-type-chambre article .diago .field-name-field-chbre-equipement .field-item:before {
+  content: "- ";
+}
+/* line 62, ../sass/_detail.scss */
+.node-type-chambre article .diago .field-name-field-chbre-description {
+  padding: 2% 1% 2% 0;
+}
+
+/* Colors*/
+/* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 4, ../sass/_home-block.scss */
+#block-views-home-block-presentation {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 13% 0 0 0;
+  width: 326px;
+  overflow: hidden;
+}
+/* line 6, ../sass/_home-block.scss */
+#block-views-home-block-presentation .diago {
+  width: 608px;
+  padding: 20px 40px 40px 30px;
+  background: rgba(242, 38, 19, 0.7);
+  transform: rotate(-10deg);
+  margin-left: -49px;
+  height: 432px;
+  position: relative;
+  display: block;
+}
+/* line 131, ../sass/_base.scss */
+#block-views-home-block-presentation .diago .inverse {
+  transform: rotate(10deg);
+  margin-top: 27px;
+  margin-left: 27px;
+  height: 100%;
+}
+/* line 137, ../sass/_base.scss */
+#block-views-home-block-presentation .diago .inverse .title-view h1 {
+  margin: 0;
+}
+/* line 141, ../sass/_base.scss */
+#block-views-home-block-presentation .diago .inverse .view-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 291px;
+  width: 291px;
+}
+/* line 146, ../sass/_base.scss */
+#block-views-home-block-presentation .diago .inverse .view-content a {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.625em;
+}
+/* line 151, ../sass/_base.scss */
+#block-views-home-block-presentation .diago .inverse .view-content .views-field-title a {
+  display: block;
+  width: 265px;
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}
+/* line 156, ../sass/_base.scss */
+#block-views-home-block-presentation .diago .inverse .view-content .views-field-title a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 159, ../sass/_base.scss */
+#block-views-home-block-presentation .diago .inverse .view-content .views-field-title a.active {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.25em;
+}
+/* line 8, ../sass/_home-block.scss */
+#block-views-home-block-presentation .diago .view-content {
+  padding: .5em 1em 0 0;
+}
+
+/* line 14, ../sass/_home-block.scss */
+#block-views-home-block-1 {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 13% 0 0 0;
+  width: 326px;
+  overflow: hidden;
+  padding: 5% 0 0 0;
+  margin-left: 326px;
+}
+/* line 18, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row {
+  width: 395px;
+  padding: 0;
+  transform: rotate(-10deg);
+  margin-top: 50px;
+  margin-left: -30px;
+  height: 265px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+/* line 28, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row .diago-titre {
+  background: #f22613;
+  margin-left: 30px;
+  height: 110px;
+  width: 363px;
+  position: relative;
+}
+/* line 34, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row .diago-titre a {
+  position: absolute;
+  top: 40px;
+  left: 57px;
+}
+/* line 38, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row .diago-titre a h1 {
+  margin: 0;
+  font-size: 2.1875em;
+}
+/* line 41, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row .diago-titre a h1.bold {
+  font-weight: 500;
+}
+/* line 44, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row .diago-titre a h1.thin {
+  font-weight: 300;
+  margin-left: 40px;
+}
+/* line 51, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row .titre-chambre {
+  transform: rotate(10deg);
+}
+/* line 54, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row .diago-sep {
+  background: rgba(242, 38, 19, 0.7);
+  height: 55px;
+  width: 363px;
+  margin-top: -10px;
+  position: relative;
+  z-index: -4;
+}
+/* line 62, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row .image-chambre {
+  transform: rotate(10deg);
+  width: 326px;
+  margin: -76px 0 0 20px;
+  position: relative;
+  z-index: -5;
+}
+/* line 69, ../sass/_home-block.scss */
+#block-views-home-block-1 .views-row.views-row-2 {
+  margin-top: 100px;
+}
+
+/* Colors*/
+/* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/
+/* line 4, ../sass/_page.scss */
+.node-page-statique {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 13% 0 0 0;
+  width: 326px;
+  overflow: hidden;
+}
+/* line 6, ../sass/_page.scss */
+.node-page-statique .diago {
+  width: 608px;
+  padding: 20px 40px 40px 30px;
+  background: rgba(242, 38, 19, 0.7);
+  transform: rotate(-10deg);
+  margin-left: -49px;
+  height: 432px;
+  position: relative;
+  display: block;
+}
+/* line 131, ../sass/_base.scss */
+.node-page-statique .diago .inverse {
+  transform: rotate(10deg);
+  margin-top: 27px;
+  margin-left: 27px;
+  height: 100%;
+}
+/* line 137, ../sass/_base.scss */
+.node-page-statique .diago .inverse .title-view h1 {
+  margin: 0;
+}
+/* line 141, ../sass/_base.scss */
+.node-page-statique .diago .inverse .view-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 291px;
+  width: 291px;
+}
+/* line 146, ../sass/_base.scss */
+.node-page-statique .diago .inverse .view-content a {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.625em;
+}
+/* line 151, ../sass/_base.scss */
+.node-page-statique .diago .inverse .view-content .views-field-title a {
+  display: block;
+  width: 265px;
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}
+/* line 156, ../sass/_base.scss */
+.node-page-statique .diago .inverse .view-content .views-field-title a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 159, ../sass/_base.scss */
+.node-page-statique .diago .inverse .view-content .views-field-title a.active {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1.25em;
+}
+/* line 8, ../sass/_page.scss */
+.node-page-statique .diago .inverse {
+  width: 290px;
+  margin-top: 0;
+}
+/* line 11, ../sass/_page.scss */
+.node-page-statique .diago .inverse header {
+  margin-bottom: 10px;
+}
+/* line 15, ../sass/_page.scss */
+.node-page-statique .diago .inverse .field-name-body h2 {
+  margin: 0;
+  font-weight: 500;
+}
+/* line 19, ../sass/_page.scss */
+.node-page-statique .diago .inverse .field-name-body p {
+  margin: 0;
+}
+/* line 21, ../sass/_page.scss */
+.node-page-statique .diago .inverse .field-name-body p a {
+  font-size: inherit;
+  text-decoration: underline;
+}
+/* line 26, ../sass/_page.scss */
+.node-page-statique .diago .inverse .field-name-body h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Colors*/
+/* Font */
+/**diagonal **/
+/** Setting diagonal behaviour for small block **/
+/**Setting background trasnparent for first block on a page **/
+/**Setting background trasnparent for second block on a page **/
+/**Setting diagonal behaviour for first content block **/
+/**Setting diagonal behaviour for second content block **/

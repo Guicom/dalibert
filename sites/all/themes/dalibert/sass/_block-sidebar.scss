@@ -2,25 +2,28 @@
 
 .reserver {
   @include block-right($red);
-    a {
-      display: block;
-      span.bold{
-        @include h1-normal;
-      }
-      span.normal {
-        @include h1-thin;
-        display: block;
-      }
-      &:hover span{
-        text-decoration: underline;
-      }
-    }
+  .reserver-content {
+     display: block;
+     span.bold{
+       @include h1-normal;
+     }
+     span.normal {
+       @include h1-thin;
+       display: block;
+     }
+   }
+  &:hover {
+    background: $grey-transparent;
+  }
 }
 
 .vins{
   @include block-right($grey-transparent);
   margin-top: 18px;
-  a {
+  .inverse {
+    margin-top: 22px;
+  }
+  .vin-content {
     display: block;
     span.bold{
       @include h2-normal;
@@ -29,16 +32,22 @@
       @include h2-thin;
       display: block;
     }
-    &:hover span{
-      text-decoration: underline;
+    &:hover .vins{
+      background: red;
     }
+  }
+  &:hover {
+    background: $red;
   }
 }
 
 .lieux {
   @include block-right($grey-transparent);
   margin-top: -15px;
-  a {
+  .inverse {
+    margin-top: 22px;
+  }
+  .lieux-content {
     display: block;
     span.bold{
       @include h2-normal;
@@ -47,35 +56,41 @@
       @include h2-thin;
       display: block;
     }
-    &:hover span{
-      text-decoration: underline;
-    }
+  }
+  &:hover {
+    background: $red;
   }
 }
 
 .gastro {
   @include block-right($grey-transparent);
   margin-top: -15px;
+  .inverse {
+    margin-top: 22px;
+  }
+  span.bold{
+    @include h2-normal;
+  }
+  span.normal {
+    @include h2-thin;
     display: block;
-    span.bold{
-      @include h2-normal;
-    }
-    span.normal {
-      @include h2-thin;
-      display: block;
-    }
-    &:hover span{
-           text-decoration: underline;
-         }
+  }
+  &:hover {
+    background: $red;
+  }
 }
 
 .decouvrez {
   @include block-right(none);
-  height: 15px;
   margin-top: 0;
+  display: block;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
   .inverse {
-    margin-top: 3%;
-    width: 37%;
+    margin-top: 6px;
+    width: 150px;
     text-align: center;
   }
   span.bold{

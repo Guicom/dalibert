@@ -2,9 +2,7 @@
 
 body {
   position: fixed;
-  background: url("../images/test.jpg") no-repeat center fixed;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+
 }
 
 p, h1, h2, h3, span, a, label, input, select {
@@ -37,6 +35,7 @@ h2 {
 h3 {
   font-size: em(16px);
   color: $white;
+  line-height: em(32px);
 }
 
 input, select {
@@ -56,4 +55,37 @@ select {
   height: 24px;
   line-height: 20px;
   padding-left: 6px;
+}
+
+#page {
+  z-index: 1;
+  position: fixed;
+}
+
+.region-bottom {
+  left: 12.5%;
+  width: 87.5%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  background: url("../images/test.jpg") no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+.views-slideshow-controls-bottom {
+  width: 200px;
+  top: 0px;
+  background: $black-transparent;
+  z-index: 50;
+  display: block;
+  visibility: visible;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  img {
+    width: 180px !important;
+    margin: 10px;
+  }
 }

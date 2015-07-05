@@ -35,7 +35,7 @@
       @include diago-detail;
       .field-name-field-chbre-sd {
         @include main-p;
-        padding: 2% 0;
+        padding: 2% 1% 2% 0;
         border-bottom: solid 1px $white;
         border-top: solid 1px $white;
         width: auto;
@@ -58,6 +58,9 @@
             content: "- ";
           }
         }
+      }
+      .field-name-field-chbre-description {
+        padding: 2% 1% 2% 0;
       }
     }
   }

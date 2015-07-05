@@ -95,11 +95,14 @@ function dt_ct_actualites_strongarm() {
         'title' => array(
           'weight' => '0',
         ),
+        'path' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'language' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),

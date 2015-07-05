@@ -31,7 +31,7 @@
     <div class="diago actualites">
         <div class="inverse actualites-page">
             <div class="actualites-title title-view">
-                <?php print t('Actualités'); ?>
+                <h1><?php print t('Actualités'); ?></h1>
             </div>
 
             <?php if ($exposed): ?>

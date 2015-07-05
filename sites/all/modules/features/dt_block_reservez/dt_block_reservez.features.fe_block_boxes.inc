@@ -14,7 +14,14 @@ function dt_block_reservez_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Bloc lien reservation';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'bloc_reservez';
-  $fe_block_boxes->body = '<div class="inverse content-reserver"><a href="/reservation"><span class="bold">Réservez</span><span class="normal">votre chambre</span></div>';
+  $fe_block_boxes->body = '<a class="reserver" href="/reservation" tabindex="-1">
+<div class="inverse content-reserver">
+<div class="reserver-content">
+<span class="bold">Réservez</span>
+<span class="normal">votre chambre</span>
+</div>
+</div>
+</a>';
 
   $export['bloc_reservez'] = $fe_block_boxes;
 
