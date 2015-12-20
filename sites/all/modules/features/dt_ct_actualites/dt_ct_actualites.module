@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the dt_ct_actualites feature.
- */
-
-include_once 'dt_ct_actualites.features.inc';
