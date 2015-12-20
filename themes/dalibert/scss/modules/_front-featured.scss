@@ -1,0 +1,38 @@
+/**
+*
+* Front Featured
+*
+**/
+
+.featured {
+  //background: $white url(../images/featured-bg.jpg) no-repeat 50% 0;
+  background-size: cover;
+  @include breakpoint(md) {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    min-height: 500px;
+  }
+
+  .featured-box {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    &:last-child {
+      border: none;
+    }
+    @include breakpoint(md) {
+      display: table-cell;
+      width: 50%;
+      padding: 0;
+      //border-right: 1px solid $grey-600;
+      border-bottom: none;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      @include transition(all, 0.3s, ease);
+    }
+  }
+}

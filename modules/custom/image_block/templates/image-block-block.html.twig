@@ -1,0 +1,12 @@
+<div id ="{{ id }}" class="parralax-block-background {% if image %} cover {% endif %}" {% if image %} style="background-image: url({{image}})" {% endif %}>
+    <div class="parralax-block-content">
+        {% if title %}
+            <h2>{{ title }}</h2>
+        {% endif %}
+        {% if description %}
+            <div class="parralax-block-content-text">
+                {{ description }}
+            </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,36 @@
+{
+  "name": "dalibert",
+  "version": "1.0.2",
+  "description": "Drupal 8 Theme",
+  "author": "Andrei Zvonkov < zvonkov@gmail.com>",
+  "homepage": "http://subtleshift.net",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zetagraph/monoset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zetagraph/monoset/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-beautify": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-shell": "^0.5.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "jshint-stylish": "^2.1.0",
+    "sc5-styleguide": "^0.3.40 "
+  }
+}
