@@ -5,9 +5,8 @@ namespace Drupal\image_block\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormBuilderInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Render\Element\FormElement;
+use Drupal\file\Entity\File;
 
 
 
@@ -30,16 +29,23 @@ class ImageBlock extends BlockBase {
     public function build() {
 
         $config = $this->getConfiguration();
-        if ($file = file_load($config['block_bg_image'][0])) {
+
+        //Load file
+        $fid = $config['block_bg_image'][0];
+        $file = File::load($fid);
+
+        if ($file) {
             $file_url = file_create_url($file->getFileUri());
         }else {
             $file_url = '';
         }
 
+        //Set default values
         $title = isset($config['label']) ? $config['label'] : '';
         $description = isset($config['block_description']['value']) ? $config['block_description']['value'] : '';
 
 
+        //Build varibale for theming
         $block =  array(
             '#title' => $title,
             '#image' => $file_url,
@@ -95,13 +101,14 @@ class ImageBlock extends BlockBase {
 
         $values = $form_state->getValues();
 
-       // $fid = $form_state->getValue(array('block_bg_image', 0));
-        //$file = file_load($fid);
-        //$file->status = FILE_STATUS_PERMANENT;
-        //file_save($file);
-        //$finfo = file_managed_file_save_upload($form, $form_state);
+        //Load file
+        $fid = $form_state->getValue(array('block_bg_image', 0));
+        $file = File::load($fid);
 
+        //Add usage for saving the file
+        \Drupal::service('file.usage')->add($file, 'image_block', 'block_content', 2);
 
+        //Set input value
         $this->setConfiguration($values);
 
     }

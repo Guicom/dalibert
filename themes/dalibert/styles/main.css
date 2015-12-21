@@ -9,6 +9,7 @@
 *
 **/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 /* line 7, ../scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -81,11 +82,11 @@ html {
 
 /* line 20, ../scss/base/_global.scss */
 ::selection {
-  background: #2ba9e0;
+  background: #90a7d1;
   color: white;
 }
 
-/* line 51, ../scss/base/_typography.scss */
+/* line 54, ../scss/base/_typography.scss */
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 100;
@@ -94,7 +95,7 @@ body {
   font-smoothing: antialiased;
 }
 
-/* line 65, ../scss/base/_typography.scss */
+/* line 68, ../scss/base/_typography.scss */
 h1, h2, h3, h4, h5, h6,
 ul, ol, dl,
 blockquote, p, address,
@@ -105,7 +106,7 @@ hr {
   margin-bottom: 2rem;
 }
 
-/* line 69, ../scss/base/_typography.scss */
+/* line 72, ../scss/base/_typography.scss */
 h1 {
   font-size: 50px;
   font-size: 3.125rem;
@@ -113,7 +114,7 @@ h1 {
   margin: 0 0 1rem 0;
 }
 @media (min-width: 767px) {
-  /* line 69, ../scss/base/_typography.scss */
+  /* line 72, ../scss/base/_typography.scss */
   h1 {
     font-size: 60px;
     font-size: 3.75rem;
@@ -121,7 +122,7 @@ h1 {
   }
 }
 
-/* line 79, ../scss/base/_typography.scss */
+/* line 82, ../scss/base/_typography.scss */
 h2 {
   font-size: 48px;
   font-size: 3rem;
@@ -129,31 +130,31 @@ h2 {
   margin: 0 0 2rem 0;
 }
 
-/* line 85, ../scss/base/_typography.scss */
+/* line 88, ../scss/base/_typography.scss */
 h3 {
   font-size: 36px;
   font-size: 2.25rem;
 }
 
-/* line 89, ../scss/base/_typography.scss */
+/* line 92, ../scss/base/_typography.scss */
 h4 {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 93, ../scss/base/_typography.scss */
+/* line 96, ../scss/base/_typography.scss */
 h5 {
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 97, ../scss/base/_typography.scss */
+/* line 100, ../scss/base/_typography.scss */
 h6 {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 108, ../scss/base/_typography.scss */
+/* line 111, ../scss/base/_typography.scss */
 blockquote {
   display: block;
   padding: 1rem 3rem 1rem 2.5rem;
@@ -164,7 +165,7 @@ blockquote {
   font-style: italic;
 }
 
-/* line 117, ../scss/base/_typography.scss */
+/* line 120, ../scss/base/_typography.scss */
 blockquote::before {
   content: "\201C";
   font-size: 60px;
@@ -177,42 +178,42 @@ blockquote::before {
   top: 5px;
 }
 
-/* line 128, ../scss/base/_typography.scss */
+/* line 131, ../scss/base/_typography.scss */
 blockquote::after {
   content: "";
 }
 
-/* line 150, ../scss/base/_typography.scss */
+/* line 153, ../scss/base/_typography.scss */
 ul, ol {
   list-style-position: inside;
 }
 
-/* line 154, ../scss/base/_typography.scss */
+/* line 157, ../scss/base/_typography.scss */
 ul {
   list-style-type: circle;
 }
 
-/* line 166, ../scss/base/_typography.scss */
+/* line 169, ../scss/base/_typography.scss */
 p {
   margin: 0 0 2rem 0;
 }
 
-/* line 170, ../scss/base/_typography.scss */
+/* line 173, ../scss/base/_typography.scss */
 strong {
   font-weight: 400;
 }
 
-/* line 174, ../scss/base/_typography.scss */
+/* line 177, ../scss/base/_typography.scss */
 pre {
   white-space: pre-wrap;
 }
 
-/* line 178, ../scss/base/_typography.scss */
+/* line 181, ../scss/base/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 182, ../scss/base/_typography.scss */
+/* line 185, ../scss/base/_typography.scss */
 .large {
   font-weight: 400;
   color: #424242;
@@ -220,7 +221,7 @@ em {
 
 /* line 8, ../scss/components/_links.scss */
 a {
-  color: #fa8f85;
+  color: #90a7d1;
   transition: .5s;
   text-decoration: none;
   -webkit-transition: all, 0.3s, ease;
@@ -230,7 +231,7 @@ a {
 }
 /* line 13, ../scss/components/_links.scss */
 a:hover {
-  color: #f63523;
+  color: #4a6eb1;
   -webkit-transition: all, 0.3s, ease;
   -moz-transition: all, 0.3s, ease;
   -o-transition: all, 0.3s, ease;
@@ -264,7 +265,7 @@ a:visited {
 }
 /* line 22, ../scss/components/_drupal-overrides.scss */
 .messages.messages--status {
-  border-color: #2ba9e0;
+  border-color: #90a7d1;
 }
 
 /* line 17, ../scss/components/_form-elements.scss */
@@ -284,7 +285,7 @@ textarea {
   transition: border 0.3s;
   font-size: 14px;
   font-size: 0.875rem;
-  color: #2ba9e0;
+  color: #90a7d1;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
@@ -307,7 +308,7 @@ input[type="submit"] {
 }
 /* line 47, ../scss/components/_form-elements.scss */
 input[type="submit"]:hover {
-  background: #2ba9e0;
+  background: #90a7d1;
   color: white;
 }
 
@@ -318,7 +319,7 @@ input[type="password"]:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #2ba9e0;
+  border-color: #90a7d1;
 }
 
 /* line 62, ../scss/components/_form-elements.scss */
@@ -335,7 +336,7 @@ select {
   border-radius: 0;
   background-color: white;
   background: url(../icons/chevron-down.svg) no-repeat 99% 50%;
-  color: #2ba9e0;
+  color: #90a7d1;
   box-shadow: none;
   border-radius: none;
   transition: border 0.3s;
@@ -633,7 +634,7 @@ pre[class*="language-"] {
 }
 /* line 49, ../scss/components/_home_block.scss */
 #block-dalibert-views-block-chambres-block-1 .featured-box:hover .views-field-title a {
-  color: #f63523;
+  color: #4a6eb1;
   -webkit-transition: all, 0.3s, ease;
   -moz-transition: all, 0.3s, ease;
   -o-transition: all, 0.3s, ease;
@@ -647,6 +648,38 @@ pre[class*="language-"] {
   -moz-transition: all, 0.3s, ease;
   -o-transition: all, 0.3s, ease;
   transition: all, 0.3s, ease;
+}
+/* line 60, ../scss/components/_home_block.scss */
+#block-dalibert-views-block-chambres-block-1 .more-link {
+  text-align: center;
+  padding: 20px;
+}
+/* line 63, ../scss/components/_home_block.scss */
+#block-dalibert-views-block-chambres-block-1 .more-link a {
+  padding: 10px;
+  border: solid 1px #90a7d1;
+}
+/* line 66, ../scss/components/_home_block.scss */
+#block-dalibert-views-block-chambres-block-1 .more-link a:after {
+  content: "\f105";
+  font-family: "FontAwesome";
+  padding-left: 10px;
+}
+
+/* line 75, ../scss/components/_home_block.scss */
+#block-restaurant {
+  height: auto;
+  overflow: hidden;
+}
+/* line 78, ../scss/components/_home_block.scss */
+#block-restaurant .parralax-block-content {
+  padding: 20px;
+}
+/* line 80, ../scss/components/_home_block.scss */
+#block-restaurant .parralax-block-content .parralax-block-content-text {
+  background: rgba(17, 17, 17, 0.7);
+  color: white;
+  padding: 10px;
 }
 
 /**
@@ -722,12 +755,12 @@ pre[class*="language-"] {
 .header-main {
   position: relative;
   height: 120px;
-  background: #383838;
+  background: white;
+  border-bottom: solid 1px #90a7d1;
 }
 @media (min-width: 767px) {
   /* line 7, ../scss/layout/_header.scss */
   .header-main {
-    z-index: 100;
     top: 0;
     width: 100%;
     line-height: 120px;
@@ -769,11 +802,97 @@ pre[class*="language-"] {
 }
 
 /* line 31, ../scss/layout/_header.scss */
+.header-scroll {
+  position: fixed;
+  display: none;
+  height: 120px;
+  background: #383838;
+  border-bottom: solid 1px #90a7d1;
+}
+@media (min-width: 767px) {
+  /* line 31, ../scss/layout/_header.scss */
+  .header-scroll {
+    display: block;
+    margin: 3px 0 0 0;
+    top: -125px;
+    z-index: 100;
+    width: 100%;
+    line-height: 120px;
+    vertical-align: middle;
+  }
+}
+/* line 46, ../scss/layout/_header.scss */
+.header-scroll .region-content-top {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+/* line 25, ../scss/utils/_mixins.scss */
+.header-scroll .region-content-top:before, .header-scroll .region-content-top:after {
+  content: "";
+  display: table;
+}
+/* line 29, ../scss/utils/_mixins.scss */
+.header-scroll .region-content-top:after {
+  clear: both;
+}
+@media (min-width: 767px) {
+  /* line 46, ../scss/layout/_header.scss */
+  .header-scroll .region-content-top {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 46, ../scss/layout/_header.scss */
+  .header-scroll .region-content-top {
+    width: 70%;
+  }
+}
+/* line 48, ../scss/layout/_header.scss */
+.header-scroll .region-content-top #block-dalibert-branding {
+  width: 200px;
+  height: 120px;
+  float: left;
+}
+/* line 54, ../scss/layout/_header.scss */
+.header-scroll .menu {
+  display: none;
+}
+@media (min-width: 767px) {
+  /* line 54, ../scss/layout/_header.scss */
+  .header-scroll .menu {
+    display: block;
+    margin: 3px 0 0 0;
+  }
+}
+/* line 60, ../scss/layout/_header.scss */
+.header-scroll .menu li {
+  display: inline;
+  margin: 0  1.5rem 0 0;
+}
+/* line 63, ../scss/layout/_header.scss */
+.header-scroll .menu li:last-child {
+  margin: 0;
+}
+/* line 66, ../scss/layout/_header.scss */
+.header-scroll .menu li a {
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 71, ../scss/layout/_header.scss */
+.header-scroll .menu li a:hover {
+  color: #f7cac7;
+}
+
+/* line 78, ../scss/layout/_header.scss */
 .logo {
   display: none;
 }
 @media (min-width: 767px) {
-  /* line 31, ../scss/layout/_header.scss */
+  /* line 78, ../scss/layout/_header.scss */
   .logo {
     display: block;
     float: left;
@@ -782,48 +901,48 @@ pre[class*="language-"] {
   }
 }
 
-/* line 41, ../scss/layout/_header.scss */
+/* line 88, ../scss/layout/_header.scss */
 .logo-svg {
   fill: #9e9e9e;
   transition: all .3s;
 }
-/* line 44, ../scss/layout/_header.scss */
+/* line 91, ../scss/layout/_header.scss */
 .logo-svg:hover {
-  fill: #2ba9e0;
+  fill: #90a7d1;
 }
 
-/* line 49, ../scss/layout/_header.scss */
+/* line 96, ../scss/layout/_header.scss */
 .header-main .menu {
   display: none;
 }
 @media (min-width: 767px) {
-  /* line 49, ../scss/layout/_header.scss */
+  /* line 96, ../scss/layout/_header.scss */
   .header-main .menu {
     display: block;
     margin: 3px 0 0 0;
   }
 }
 
-/* line 57, ../scss/layout/_header.scss */
+/* line 104, ../scss/layout/_header.scss */
 .header-main .menu li {
   display: inline;
   margin: 0  1.5rem 0 0;
 }
-/* line 60, ../scss/layout/_header.scss */
+/* line 107, ../scss/layout/_header.scss */
 .header-main .menu li:last-child {
   margin: 0;
 }
-/* line 63, ../scss/layout/_header.scss */
+/* line 110, ../scss/layout/_header.scss */
 .header-main .menu li a {
   display: inline-block;
   font-size: 18px;
   font-size: 1.125rem;
   text-transform: uppercase;
-  color: white;
+  color: #383838;
 }
-/* line 68, ../scss/layout/_header.scss */
+/* line 115, ../scss/layout/_header.scss */
 .header-main .menu li a:hover {
-  color: #fa8f85;
+  color: #90a7d1;
 }
 
 /**
@@ -855,7 +974,7 @@ pre[class*="language-"] {
 }
 /* line 23, ../scss/layout/_footer.scss */
 .footer-main .twitter:hover {
-  fill: #2ba9e0;
+  fill: #90a7d1;
 }
 /* line 27, ../scss/layout/_footer.scss */
 .footer-main .top-link {
@@ -946,7 +1065,7 @@ pre[class*="language-"] {
 }
 /* line 50, ../scss/modules/_front-cover.scss */
 .cover .cover-title:hover .drupal-logo path {
-  fill: #2ba9e0;
+  fill: #90a7d1;
 }
 /* line 53, ../scss/modules/_front-cover.scss */
 .cover .intro-title {
@@ -1043,7 +1162,7 @@ pre[class*="language-"] {
 }
 /* line 40, ../scss/modules/_front-features.scss */
 .features .feature-list li:hover .checkbox {
-  fill: #2ba9e0;
+  fill: #90a7d1;
 }
 /* line 43, ../scss/modules/_front-features.scss */
 .features .feature-list li .checkbox {
@@ -1104,7 +1223,7 @@ pre[class*="language-"] {
 }
 /* line 33, ../scss/modules/_front-icons.scss */
 .icons .icon-box:hover .icon {
-  fill: #2ba9e0;
+  fill: #90a7d1;
 }
 /* line 37, ../scss/modules/_front-icons.scss */
 .icons .icon {
@@ -1151,7 +1270,7 @@ pre[class*="language-"] {
 }
 /* line 29, ../scss/modules/_front-posts.scss */
 .posts .views-row:hover {
-  background: #2ba9e0;
+  background: #90a7d1;
 }
 /* line 34, ../scss/modules/_front-posts.scss */
 .posts .views-row:hover .date, .posts .views-row:hover p a, .posts .views-row:hover h2 a {
@@ -1279,7 +1398,7 @@ pre[class*="language-"] {
 }
 /* line 36, ../scss/modules/_front-news.scss */
 .news .contain:hover .drupal-logo path {
-  fill: #2ba9e0;
+  fill: #90a7d1;
 }
 
 /**

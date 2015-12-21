@@ -7,9 +7,9 @@
 .header-main {
   position: relative;
   height: 120px;
-  background: $grey-dalibert;
+  background: $white;
+  border-bottom: solid 1px $blue;
   @include breakpoint(md) {
-    z-index: 100;
     top: 0;
     width: 100%;
     line-height: 120px;
@@ -28,6 +28,53 @@
   }
 }
 
+.header-scroll {
+  position: fixed;
+  display: none;
+  height: 120px;
+  background: $grey-dalibert;
+  border-bottom: solid 1px $blue;
+  @include breakpoint(md) {
+    display: block;
+    margin: 3px 0 0 0;
+    top: -125px;
+    z-index: 100;
+    width: 100%;
+    line-height: 120px;
+    vertical-align: middle;
+  }
+  .region-content-top {
+    @include center;
+    #block-dalibert-branding {
+      width: 200px;
+      height: 120px;
+      float: left;
+    }
+  }
+  .menu {
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+      margin: 3px 0 0 0;
+    }
+    li {
+      display: inline;
+      margin: 0  1.5rem 0 0;
+      &:last-child {
+        margin: 0;
+      }
+      a {
+        display: inline-block;
+        @include font-size(18px);
+        text-transform: uppercase;
+        color: $white;
+        &:hover {
+          color: $pink2;
+        }
+      }
+    }
+  }
+}
 .logo {
   display: none;
   @include breakpoint(md) {
@@ -64,9 +111,9 @@
     display: inline-block;
     @include font-size(18px);
     text-transform: uppercase;
-    color: $white;
+    color: $grey-dalibert;
     &:hover {
-      color: $pink;
+      color: $blue;
     }
   }
 }

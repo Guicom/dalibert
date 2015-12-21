@@ -4,8 +4,13 @@
  * Default theme implementation to display a single Drupal page.
  */
  #}
+<header class="header-scroll">
+    {% if page.content_top %}
+        {{ page.content_top }}
+    {% endif %}
+</header>
 
- <header class="header-main">
+<header class="header-main">
      {% if page.content_top %}
          {{ page.content_top }}
      {% endif %}

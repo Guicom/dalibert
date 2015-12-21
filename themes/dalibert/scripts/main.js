@@ -40,6 +40,18 @@
       // Trigger the injection
       SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {});
 
+    $(document).on('scroll', function() {
+        var documentTop = $(this).scrollTop();
+        var Top = parseInt(-300 + documentTop);
+        if (Top <= -3 ) {
+            $('.header-scroll').css({ top: Top });
+        }else {
+            $('.header-scroll').css({ top: '-3px' });
+        }
+    });
+
     }
+
+
   };
 })(jQuery, Drupal);
