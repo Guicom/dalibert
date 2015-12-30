@@ -682,6 +682,40 @@ pre[class*="language-"] {
   padding: 10px;
 }
 
+/* line 88, ../scss/components/_home_block.scss */
+#block-views-block-categorie-blog-block-1 {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+/* line 25, ../scss/utils/_mixins.scss */
+#block-views-block-categorie-blog-block-1:before, #block-views-block-categorie-blog-block-1:after {
+  content: "";
+  display: table;
+}
+/* line 29, ../scss/utils/_mixins.scss */
+#block-views-block-categorie-blog-block-1:after {
+  clear: both;
+}
+@media (min-width: 767px) {
+  /* line 88, ../scss/components/_home_block.scss */
+  #block-views-block-categorie-blog-block-1 {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 88, ../scss/components/_home_block.scss */
+  #block-views-block-categorie-blog-block-1 {
+    width: 70%;
+  }
+}
+/* line 90, ../scss/components/_home_block.scss */
+#block-views-block-categorie-blog-block-1 .views-row {
+  display: inline-block;
+  width: 25%;
+  min-width: 200px;
+}
+
 /**
 *
 * Layout
