@@ -1,0 +1,4 @@
+name = Taxonomylocalize
+description = Custom module to localize taxonomy term
+core = 7.x
+package = Dalibert

@@ -1,0 +1,135 @@
+body {
+  font-family: $font;
+}
+
+div, ul, li, span, h1, h2, h3 {
+  @include box-sizing(border-box)
+}
+
+.col-sm-12 {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+input[type="submit"],
+.btn-default {
+  display: block;
+  border: none;
+  background: $pink;
+  padding: 1rem;
+  margin: 0 0 1rem;
+  cursor: pointer;
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  @include border-radius(0);
+  &:hover {
+    background: $grey-dalibert;
+    color: $white;
+  }
+}
+
+.button {
+  display: block;
+  border: none;
+  background: $pink;
+  padding: 1rem;
+  margin: 0 0 1rem;
+  cursor: pointer;
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  @include border-radius(0);
+  &:hover {
+    background: darken($pink, 5%);
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.navbar.container, .navbar.container-fluid {
+  margin-top: 0;
+}
+
+
+p {
+  @include p-style;
+}
+
+.page-header {
+  border: none;
+  text-align: center;
+  @include h1-title;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: $pink;
+}
+div.more-link a,
+a.more-link,
+.div-more-link {
+  margin: 40px auto;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background: $pink;
+  color: $white;
+  @include transition(all, .3s);
+  &:before{
+    @include icon;
+    content: "\f105";
+    @include transition(all, .3s);
+    margin-right: 8px;
+  }
+  &:hover,
+  &:active,
+  &:focus{
+    background: $grey-dalibert;
+    @include transition(all, .3s);
+    text-decoration: none;
+    &:before{
+      @include transition(all, .3s);
+      text-decoration: none;
+    }
+  }
+}
+
+
+.ui-tooltip {
+  display: none !important;
+}
+
+.field-name-body {
+  table {
+    margin: 0 auto;
+  }
+}
+
+.field-name-field-chbr-equipement {
+  li{
+    &:before{
+      content: '';
+      display: inline-block;
+      line-height: 25px;
+      vertical-align: middle;
+      height: 5px;
+      width: 5px;
+      background: $pink;
+      margin-right: 5px;
+      @include border-radius(3px);
+    }
+  }
+}

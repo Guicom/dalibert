@@ -1,0 +1,21 @@
+.views-exposed-form {
+  label {
+    display: inline-block;
+    margin-right: 10px;
+    color: $grey-dalibert;
+    font-weight: 300;
+    font-size: 20px;
+    vertical-align: sub;
+  }
+  .views-widget {
+    display: inline-block;
+    select.form-control {
+      background: $grey-dalibert;
+      color: $white;
+      border: none;
+      @include box-shadow(none);
+      @include border-radius(0);
+    }
+  }
+}
+

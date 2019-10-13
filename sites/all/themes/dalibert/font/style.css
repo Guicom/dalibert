@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?a91tzs');
+    src:    url('fonts/icomoon.eot?a91tzs#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?a91tzs') format('truetype'),
+        url('fonts/icomoon.woff?a91tzs') format('woff'),
+        url('fonts/icomoon.svg?a91tzs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-puit-dalibert .path1:before {
+    content: "\e900";
+    color: rgb(165, 164, 164);
+}
+.icon-puit-dalibert .path2:before {
+    content: "\e901";
+    margin-left: -0.388671875em;
+    color: rgb(73, 73, 73);
+}
+

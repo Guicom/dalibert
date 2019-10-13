@@ -1,0 +1,179 @@
+.page-eform-submit {
+  #block-system-main {
+    @include make-container;
+  }
+}
+
+#reservation-entityform-edit-form {
+  > div > div {
+    width: 25%;
+    float: left;
+    padding: 0 5px;
+    @media (max-width: $screen-xs) {
+      width: 100%;
+    }
+  }
+  label {
+    @include p-style;
+    color: $grey-dalibert;
+  }
+  #edit-field-resa-prenom-wrapper {
+
+  }
+  #edit-field-resa-nom-wrapper {
+
+  }
+  #edit-field-resa-mail-wrapper{
+
+  }
+  #edit-field-adresse-ligne-1 {
+    clear: both;
+  }
+  #edit-field-adresse-ligne-2 {
+
+  }
+  #edit-field-code-postal {
+    clear: both;
+  }
+  #edit-field-resa-ville-wrapper {
+
+  }
+  #edit-field-resa-pays-wrapper {
+
+  }
+  #edit-field-chambre {
+    clear: both;
+    float: initial;
+    width: 100%;
+    .tabledrag-toggle-weight-wrapper {
+      display: none;
+    }
+    table {
+      width: 100%;
+      thead {
+        label {
+          color: $grey-dalibert;
+          font-size: 25px;
+        }
+        th {
+          border-bottom: 0;
+        }
+      }
+
+      tbody {
+        tr {
+          > td {
+            border-bottom: solid 1px $pink;
+            border-top: 0;
+            padding: 0;
+            > div {
+              padding: 0 5px;
+            }
+            &.field-multiple-drag {
+              display: none;
+            }
+            h4,
+            label,
+            .panel-title{
+              margin: 0;
+              padding: 0;
+              font-weight: 300;
+              color: $grey-dalibert;
+            }
+            .field-type-datetime {
+              padding: 0;
+              .panel-default {
+                background: none;
+                border: 0;
+              }
+              legend {
+                background: none;
+                border: 0;
+                padding: 0;
+              }
+              .panel-body {
+                padding: 0;
+                .help-block {
+                  border: 0;
+                }
+                .date-padding {
+                  padding: 0;
+                }
+              }
+            }
+            .container-inline-date {
+              clear: none;
+              width: 25%;
+              float: left;
+              position: relative;
+              @media (max-width: $screen-xs) {
+                width: 100%;
+              }
+              .end-date-wrapper {
+                > .control-label {
+                  position: absolute;
+                  left: -50px;
+                }
+              }
+              .help-block {
+                color: $grey-dalibert;
+                font-size: 10px;
+                font-weight: 300;
+              }
+
+            }
+            .field-name-field-nombre-de-personnes {
+              clear: both;
+              width: 25%;
+              float: left;
+              @media (max-width: $screen-xs) {
+                width: 100%;
+              }
+              select {
+                width: 90%;
+                display: block;
+                @media (max-width: $screen-xs) {
+                  width: 100%;
+                }
+              }
+            }
+            .field-name-field-resa-chambre  {
+              float: left;
+              width: 25%;
+              @media (max-width: $screen-xs) {
+                width: 100%;
+              }
+            }
+            .form-actions {
+              clear: both;
+              input {
+                padding: 5px 10px;
+              }
+            }
+          }
+        }
+        button {
+          float: left;
+          margin: 15px 0 0 30px;
+        }
+      }
+    }
+    .field-add-more-submit {
+      padding: 5px 10px;
+    }
+  }
+  #edit-actions {
+    clear: both;
+  }
+}
+
+
+.page-eform-reservation-confirm {
+  .alert {
+    display: none;
+  }
+  .page-header,
+  .region-content {
+    @include make-container;
+  }
+}

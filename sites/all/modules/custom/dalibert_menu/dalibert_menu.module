@@ -1,0 +1,41 @@
+<?php
+
+
+function dalibert_menu_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'menu_edit_item':
+      $menu_language = i18n_menu_item_get_language($form['original_item']['#value']);
+      if($form['mlid']['#value']) {
+        $anchor = variable_get($form['mlid']['#value'] . '_' . $menu_language . '_anchor');
+      }else {
+        $anchor = '';
+      }
+
+      $form['link_menu_anchor'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Anchor'),
+        '#default_value' => $anchor,
+        '#size' => 60,
+        '#maxlength' => 128,
+      );
+
+      //Add custom submit
+      array_unshift($form['#submit'], '_dalibert_menu_form_submit');
+
+      break;
+  }
+}
+
+
+function _dalibert_menu_form_submit($form, &$form_state) {
+  $menu_language = i18n_menu_item_get_language($form['original_item']['#value']);
+  if (!empty($form_state['values']['link_menu_anchor'])) {
+    $variable_name = $form_state['values']['mlid']. '_' . $menu_language . '_anchor';
+    variable_set($variable_name, $form_state['values']['link_menu_anchor']);
+  }
+}
+
+
+function dalibert_menu_date_combo_process_alter(&$element, &$form_state, &$context) {
+  $element['value2']['#title'] = t('');
+}

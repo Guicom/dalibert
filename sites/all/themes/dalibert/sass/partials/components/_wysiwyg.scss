@@ -1,0 +1,20 @@
+.field-name-body {
+  h4 {
+    margin: 0;
+  }
+  h3,
+  h2 {
+    color: $pink !important;
+    span {
+      color: $pink !important;
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+  table {
+    @media (max-width: 600px) {
+      width: 100% !important;
+    }
+  }
+}

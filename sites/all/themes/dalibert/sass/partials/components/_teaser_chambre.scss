@@ -1,0 +1,67 @@
+.view-chambres {
+  h2 {
+    @include h1-title;
+  }
+  .view-content {
+    .views-row {
+      padding: 0;
+      cursor: pointer;
+      margin-bottom: 20px;
+
+      .chambre-wrapper {
+        background: $grey-light;
+        padding: 15px;
+        border: 1px solid transparent;
+        position: relative;
+        @include box-sizing(border-box);
+        img {
+          width: 100%;
+          height: auto;
+          transition: opacity 0.35s, transform 0.35s;
+        }
+        .chambre-content {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+
+          h2 {
+            color: $grey-dalibert;
+            text-transform: uppercase;
+            font-weight: 300;
+            padding: 5px 10px;
+            margin-bottom: 0;
+            font-size: 25px;
+          }
+          a {
+            z-index: 1000;
+            text-indent: 200%;
+            white-space: nowrap;
+            font-size: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          .div-more-link {
+            margin: 10px 0;
+            font-size: 15px;
+          }
+        }
+      }
+      &:hover {
+        .chambre-wrapper {
+          border: 1px solid $pink;
+
+          .div-more-link {
+            background: $grey-dalibert;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+

@@ -1,0 +1,153 @@
+#block-quicktabs-notre-carte {
+  background: $grey-light;
+  margin-top: 20px;
+  border-top: 1px solid $grey-dalibert;
+  .block-title {
+    @include make-container;
+    @include h1-title;
+  }
+  .content {
+    @include make-container;
+    #quicktabs-notre_carte {
+      > ul {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        > li {
+          display: table-cell;
+          padding: 0;
+          background: $pink;
+          text-align: center;
+          position: relative;
+          border-right: 1px solid $grey-light;
+          @include transition(all, .3s);
+          white-space: normal;
+          vertical-align: middle;
+          @media (max-width: $screen-xs) {
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 1px;
+          }
+          &:last-child {
+            border: none;
+          }
+          &:not(.active) {
+            &:hover {
+                background: lighten($pink, 10%);
+                @include transition(all, .3s);
+              }
+          }
+
+          a {
+            color: $white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 10px 0;
+            display: block;
+          }
+          &.active {
+            &:before {
+              content: '';
+              width: 10px;
+              height: 10px;
+              background: $pink;
+              @include transform(rotate(45deg), translateX(-50%));
+              display: block;
+              position: absolute;
+              left: 50%;
+              bottom: -5px;
+              @media (max-width: $screen-xs) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    #quicktabs-container-notre_carte {
+      position: relative;
+      padding-top: 20px;
+      min-height: 666px;
+      &:before {
+        font-family: 'dalibert' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        @include align-all;
+        position: absolute;
+        content: "\e900";
+        color: darken($grey-light, 2%);
+        font-size: 450px;
+      }
+      &:after {
+        font-family: 'dalibert' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        @include align-all;
+        position: absolute;
+        content: "\e901";
+        color: darken($grey-light, 3%);
+        font-size: 450px;
+      }
+      .quicktabs-tabpage {
+        position: relative;
+        z-index: 1;
+      }
+
+      #quicktabs-les_vins_ {
+        > ul {
+          text-align: center;
+          position: relative;
+          z-index: 1;
+          > li {
+            padding: 10px;
+            border-right: 1px solid darken($grey-light, 20%);
+            @media (max-width: $screen-xs) {
+              border-right: none;
+            }
+            a {
+              font-size: 20px;
+              text-decoration: none;
+              color: $grey-dalibert;
+              font-weight: 300;
+              padding: 5px;
+            }
+            &:last-child {
+              border: none;
+            }
+            &.active {
+              a {
+                color: $pink;
+              }
+            }
+          }
+        }
+      }
+      #quicktabs-container-les_vins_ {
+        border-top: 1px solid darken($grey-light, 20%);
+        padding-top: 20px;
+        margin-top: 40px;
+        position: relative;
+        z-index: 1;
+        .quicktabs-tabpage {
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+}

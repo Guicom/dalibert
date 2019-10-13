@@ -1,0 +1,95 @@
+.node-type-blog {
+  .blog-wrapper {
+    background: $grey-light;
+    height: auto;
+    overflow: hidden;
+    .blog-image {
+      padding: 0;
+    }
+    .blog-content {
+      padding: 20px 30px;
+      background: $grey-light;
+      .header-blog {
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $grey-dalibert;
+        height: auto;
+        overflow: hidden;
+      }
+      .field-name-field-categorie {
+        float: left;
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        .field-label {
+          font-size: 20px;
+          font-weight: 300;
+          color: $grey-dalibert;
+        }
+        .field-item {
+          font-size: 20px;
+          font-weight: 400;
+          color: $grey-dalibert;
+        }
+      }
+      .back {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        display: block;
+        float: right;
+        font-size: 20px;
+        color: $grey-dalibert;
+        font-weight: 300;
+        @include transition(color .3s);
+        text-align: right;
+        &:before {
+          @include icon;
+          content: "\f104";
+          margin-right: 8px;
+        }
+        &:hover,
+        &:active,
+        &:focus{
+          text-decoration: none;
+          color: $pink;
+          @include transition(color .3s);
+        }
+      }
+    }
+  }
+  .galerie-label {
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+  .galerie-wrapper {
+    background: $pink;
+    padding: 20px 0;
+    .galerie-label {
+      height: 450px;
+      h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        @include vertical-align;
+        color: $white;
+        margin: 0;
+        i {
+          display: block;
+          height: 80px;
+          width: 80px;
+          @include border-radius(40px);
+          border: 3px solid $white;
+          line-height: 80px;
+          margin: 0px auto 20px auto;
+        }
+      }
+    }
+    .galerie {
+      .jcbx-glry-classic {
+        //background: $pink !important;
+      }
+    }
+  }
+}

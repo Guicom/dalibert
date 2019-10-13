@@ -1,0 +1,4 @@
+name = Dalibert Menu
+description = Custom module to manage anchor & normal link
+core = 7.x
+package = Dalibert

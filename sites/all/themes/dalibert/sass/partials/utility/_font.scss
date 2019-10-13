@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic);
+
+
+$font : 'Open Sans', sans-serif;
+
+
+
+
+@font-face {
+  font-family: 'dalibert';
+  src:    url('../font/dalibert.eot?a91tzs');
+  src:    url('../font/dalibert.eot?a91tzs#iefix') format('embedded-opentype'),
+  url('../font/dalibert.ttf?a91tzs') format('truetype'),
+  url('../font/dalibert.woff?a91tzs') format('woff'),
+  url('../font/dalibert.svg?a91tzs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-puit"], [class*=" icon-puit"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dalibert' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 190px;
+  margin-top: -120px;
+  @include horyzontal-align;
+  position: absolute;
+}
+
+.icon-puit-dalibert .path1:before {
+  content: "\e900";
+  //color: rgb(165, 164, 164);
+  color: darken($grey-puit, 10%);
+}
+.icon-puit-dalibert .path2:before {
+  content: "\e901";
+  margin-left: -0.388671875em;
+  //color: rgb(73, 73, 73);
+  color: $grey-puit;
+}
+
+
+@font-face {
+  font-family: 'cat';
+  src:    url('../font/cat.eot?a91tzs');
+  src:    url('../font/cat.eot?a91tzs#iefix') format('embedded-opentype'),
+  url('../font/cat.ttf?a91tzs') format('truetype'),
+  url('../font/cat.woff?a91tzs') format('woff'),
+  url('../font/cat.svg?a91tzs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-cat"], [class*=" icon-cat"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cat' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//Add FontAwesome
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+$font-icon: 'FontAwesome';
+
+@mixin icon {
+  font-family: $font-icon;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

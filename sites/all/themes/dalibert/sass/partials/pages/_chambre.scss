@@ -1,0 +1,46 @@
+.node-type-chambres {
+  .chambre-slider {
+    background: $grey-light;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  .field {
+    margin-bottom: 20px;
+    &.field-name-field-chbr-equipement {
+      padding-bottom: 10px;
+      border-bottom: solid 1px $grey-dalibert;
+    }
+    .field-label {
+      @include p-style;
+    }
+    .field-item {
+      @include p-style;
+    }
+  }
+  .back,
+  .book{
+    display: block;
+    background: $pink;
+    color: $white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    @include transition(all .3s);
+    &:hover {
+      background: $grey-dalibert;
+      text-decoration: none;
+      @include transition(all .3s);
+    }
+  }
+  .back {
+    &:before {
+      @include icon;
+      content: "\f104";
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.pagination {
+  li {
+    span,
+    a {
+      border: none;
+      color: $grey-dalibert;
+      background: $grey-light;
+      margin: 0 .5px;
+      @include transition(all, .3s);
+    }
+    &:hover {
+      a {
+        background: $pink;
+        color: $white;
+        @include transition(all, .3s);
+      }
+    }
+    &.active {
+      span {
+        background: $pink;
+        color: $white;
+      }
+      &:hover {
+        span {
+          background: $pink;
+          color: $white;
+        }
+      }
+    }
+    &:first-child,
+    &:last-child {
+      span,
+      a {
+        @include border-radius(0);
+      }
+    }
+  }
+}
