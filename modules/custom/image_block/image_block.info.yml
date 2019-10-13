@@ -1,6 +1,0 @@
-name: Image block
-description: Premier block avec image en fond + parallax
-package: Custom
-type: module
-version: 1.0
-core: 8.
